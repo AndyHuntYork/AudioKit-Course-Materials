@@ -24,7 +24,7 @@ entry-level position, as they're used almost universally.
 
 AudioKit Playgrounds are great for rapid sound-design and audio prototyping. Since playgrounds allow 
 you to make changes to your code without having to recompile them, you’re able to quickly hear how 
-your new code changes affect the sound. This rapid feedback cuts down on development time…if you 
+your new code changes affect the sound. This rapid feedback cuts down on development time. If you 
 want to hear what your oscillator sounds like at a different frequency, you just change the 
 frequency and you’ll hear the result; without having to recompile an app. 
 
@@ -33,7 +33,7 @@ that you spend some time creating the sounds you want for your app in a Playgrou
 those to your app when you’re satisfied with what you hear. 
 
 The AudioKit website has a whole section devoted to [Playgrounds](http://audiokit.io/playgrounds/). 
-Here, you’ll find not only the code for these Playgrounds, but also videos demonstrating there usage 
+Here, you’ll find not only the code for these Playgrounds, but also videos demonstrating their usage. 
 
 There’s no additional set-up to use Playgrounds; you’ll just need to make sure you download the 
 source-code, and not just the pre-compiled frameworks. The video in the “Installation” section of 
