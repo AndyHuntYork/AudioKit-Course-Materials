@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E41FB6811CD2EC4C005CAF9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB6801CD2EC4C005CAF9E /* AppDelegate.swift */; };
+		E41FB6831CD2EC4C005CAF9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB6821CD2EC4C005CAF9E /* ViewController.swift */; };
+		E41FB6861CD2EC4C005CAF9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41FB6841CD2EC4C005CAF9E /* Main.storyboard */; };
+		E41FB6881CD2EC4C005CAF9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41FB6871CD2EC4C005CAF9E /* Assets.xcassets */; };
+		E41FB68B1CD2EC4C005CAF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41FB6891CD2EC4C005CAF9E /* LaunchScreen.storyboard */; };
+		E41FB6961CD2EC4C005CAF9E /* OscillatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB6951CD2EC4C005CAF9E /* OscillatorUITests.swift */; };
+		E41FB6A11CD2EC4C005CAF9E /* OscillatorUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB6A01CD2EC4C005CAF9E /* OscillatorUIUITests.swift */; };
+		E41FB6B01CD2EC5F005CAF9E /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41FB6AE1CD2EC5A005CAF9E /* AudioKit.framework */; };
+		E41FB6B11CD2EC5F005CAF9E /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E41FB6AE1CD2EC5A005CAF9E /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E41FB6921CD2EC4C005CAF9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E41FB6751CD2EC4C005CAF9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E41FB67C1CD2EC4C005CAF9E;
+			remoteInfo = OscillatorUI;
+		};
+		E41FB69D1CD2EC4C005CAF9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E41FB6751CD2EC4C005CAF9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E41FB67C1CD2EC4C005CAF9E;
+			remoteInfo = OscillatorUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E41FB6B21CD2EC5F005CAF9E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E41FB6B11CD2EC5F005CAF9E /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E41FB67D1CD2EC4C005CAF9E /* OscillatorUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OscillatorUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41FB6801CD2EC4C005CAF9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E41FB6821CD2EC4C005CAF9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E41FB6851CD2EC4C005CAF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E41FB6871CD2EC4C005CAF9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E41FB68A1CD2EC4C005CAF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E41FB68C1CD2EC4C005CAF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41FB6911CD2EC4C005CAF9E /* OscillatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OscillatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41FB6951CD2EC4C005CAF9E /* OscillatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OscillatorUITests.swift; sourceTree = "<group>"; };
+		E41FB6971CD2EC4C005CAF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41FB69C1CD2EC4C005CAF9E /* OscillatorUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OscillatorUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41FB6A01CD2EC4C005CAF9E /* OscillatorUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OscillatorUIUITests.swift; sourceTree = "<group>"; };
+		E41FB6A21CD2EC4C005CAF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41FB6AE1CD2EC5A005CAF9E /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E41FB67A1CD2EC4C005CAF9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41FB6B01CD2EC5F005CAF9E /* AudioKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41FB68E1CD2EC4C005CAF9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41FB6991CD2EC4C005CAF9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E41FB6741CD2EC4C005CAF9E = {
+			isa = PBXGroup;
+			children = (
+				E41FB6AE1CD2EC5A005CAF9E /* AudioKit.framework */,
+				E41FB67F1CD2EC4C005CAF9E /* OscillatorUI */,
+				E41FB6941CD2EC4C005CAF9E /* OscillatorUITests */,
+				E41FB69F1CD2EC4C005CAF9E /* OscillatorUIUITests */,
+				E41FB67E1CD2EC4C005CAF9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E41FB67E1CD2EC4C005CAF9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E41FB67D1CD2EC4C005CAF9E /* OscillatorUI.app */,
+				E41FB6911CD2EC4C005CAF9E /* OscillatorUITests.xctest */,
+				E41FB69C1CD2EC4C005CAF9E /* OscillatorUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E41FB67F1CD2EC4C005CAF9E /* OscillatorUI */ = {
+			isa = PBXGroup;
+			children = (
+				E41FB6801CD2EC4C005CAF9E /* AppDelegate.swift */,
+				E41FB6821CD2EC4C005CAF9E /* ViewController.swift */,
+				E41FB6841CD2EC4C005CAF9E /* Main.storyboard */,
+				E41FB6871CD2EC4C005CAF9E /* Assets.xcassets */,
+				E41FB6891CD2EC4C005CAF9E /* LaunchScreen.storyboard */,
+				E41FB68C1CD2EC4C005CAF9E /* Info.plist */,
+			);
+			path = OscillatorUI;
+			sourceTree = "<group>";
+		};
+		E41FB6941CD2EC4C005CAF9E /* OscillatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E41FB6951CD2EC4C005CAF9E /* OscillatorUITests.swift */,
+				E41FB6971CD2EC4C005CAF9E /* Info.plist */,
+			);
+			path = OscillatorUITests;
+			sourceTree = "<group>";
+		};
+		E41FB69F1CD2EC4C005CAF9E /* OscillatorUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E41FB6A01CD2EC4C005CAF9E /* OscillatorUIUITests.swift */,
+				E41FB6A21CD2EC4C005CAF9E /* Info.plist */,
+			);
+			path = OscillatorUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E41FB67C1CD2EC4C005CAF9E /* OscillatorUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41FB6A51CD2EC4C005CAF9E /* Build configuration list for PBXNativeTarget "OscillatorUI" */;
+			buildPhases = (
+				E41FB6791CD2EC4C005CAF9E /* Sources */,
+				E41FB67A1CD2EC4C005CAF9E /* Frameworks */,
+				E41FB67B1CD2EC4C005CAF9E /* Resources */,
+				E41FB6B21CD2EC5F005CAF9E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OscillatorUI;
+			productName = OscillatorUI;
+			productReference = E41FB67D1CD2EC4C005CAF9E /* OscillatorUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E41FB6901CD2EC4C005CAF9E /* OscillatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41FB6A81CD2EC4C005CAF9E /* Build configuration list for PBXNativeTarget "OscillatorUITests" */;
+			buildPhases = (
+				E41FB68D1CD2EC4C005CAF9E /* Sources */,
+				E41FB68E1CD2EC4C005CAF9E /* Frameworks */,
+				E41FB68F1CD2EC4C005CAF9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E41FB6931CD2EC4C005CAF9E /* PBXTargetDependency */,
+			);
+			name = OscillatorUITests;
+			productName = OscillatorUITests;
+			productReference = E41FB6911CD2EC4C005CAF9E /* OscillatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E41FB69B1CD2EC4C005CAF9E /* OscillatorUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41FB6AB1CD2EC4C005CAF9E /* Build configuration list for PBXNativeTarget "OscillatorUIUITests" */;
+			buildPhases = (
+				E41FB6981CD2EC4C005CAF9E /* Sources */,
+				E41FB6991CD2EC4C005CAF9E /* Frameworks */,
+				E41FB69A1CD2EC4C005CAF9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E41FB69E1CD2EC4C005CAF9E /* PBXTargetDependency */,
+			);
+			name = OscillatorUIUITests;
+			productName = OscillatorUIUITests;
+			productReference = E41FB69C1CD2EC4C005CAF9E /* OscillatorUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E41FB6751CD2EC4C005CAF9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Nicholas Arner";
+				TargetAttributes = {
+					E41FB67C1CD2EC4C005CAF9E = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E41FB6901CD2EC4C005CAF9E = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E41FB67C1CD2EC4C005CAF9E;
+					};
+					E41FB69B1CD2EC4C005CAF9E = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E41FB67C1CD2EC4C005CAF9E;
+					};
+				};
+			};
+			buildConfigurationList = E41FB6781CD2EC4C005CAF9E /* Build configuration list for PBXProject "OscillatorUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E41FB6741CD2EC4C005CAF9E;
+			productRefGroup = E41FB67E1CD2EC4C005CAF9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E41FB67C1CD2EC4C005CAF9E /* OscillatorUI */,
+				E41FB6901CD2EC4C005CAF9E /* OscillatorUITests */,
+				E41FB69B1CD2EC4C005CAF9E /* OscillatorUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E41FB67B1CD2EC4C005CAF9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41FB68B1CD2EC4C005CAF9E /* LaunchScreen.storyboard in Resources */,
+				E41FB6881CD2EC4C005CAF9E /* Assets.xcassets in Resources */,
+				E41FB6861CD2EC4C005CAF9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41FB68F1CD2EC4C005CAF9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41FB69A1CD2EC4C005CAF9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E41FB6791CD2EC4C005CAF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41FB6831CD2EC4C005CAF9E /* ViewController.swift in Sources */,
+				E41FB6811CD2EC4C005CAF9E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41FB68D1CD2EC4C005CAF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41FB6961CD2EC4C005CAF9E /* OscillatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41FB6981CD2EC4C005CAF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41FB6A11CD2EC4C005CAF9E /* OscillatorUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E41FB6931CD2EC4C005CAF9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E41FB67C1CD2EC4C005CAF9E /* OscillatorUI */;
+			targetProxy = E41FB6921CD2EC4C005CAF9E /* PBXContainerItemProxy */;
+		};
+		E41FB69E1CD2EC4C005CAF9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E41FB67C1CD2EC4C005CAF9E /* OscillatorUI */;
+			targetProxy = E41FB69D1CD2EC4C005CAF9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E41FB6841CD2EC4C005CAF9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E41FB6851CD2EC4C005CAF9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E41FB6891CD2EC4C005CAF9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E41FB68A1CD2EC4C005CAF9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E41FB6A31CD2EC4C005CAF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E41FB6A41CD2EC4C005CAF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E41FB6A61CD2EC4C005CAF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OscillatorUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nfa.OscillatorUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E41FB6A71CD2EC4C005CAF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OscillatorUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nfa.OscillatorUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E41FB6A91CD2EC4C005CAF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OscillatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nfa.OscillatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OscillatorUI.app/OscillatorUI";
+			};
+			name = Debug;
+		};
+		E41FB6AA1CD2EC4C005CAF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OscillatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nfa.OscillatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OscillatorUI.app/OscillatorUI";
+			};
+			name = Release;
+		};
+		E41FB6AC1CD2EC4C005CAF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OscillatorUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nfa.OscillatorUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OscillatorUI;
+			};
+			name = Debug;
+		};
+		E41FB6AD1CD2EC4C005CAF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OscillatorUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nfa.OscillatorUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OscillatorUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E41FB6781CD2EC4C005CAF9E /* Build configuration list for PBXProject "OscillatorUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41FB6A31CD2EC4C005CAF9E /* Debug */,
+				E41FB6A41CD2EC4C005CAF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E41FB6A51CD2EC4C005CAF9E /* Build configuration list for PBXNativeTarget "OscillatorUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41FB6A61CD2EC4C005CAF9E /* Debug */,
+				E41FB6A71CD2EC4C005CAF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E41FB6A81CD2EC4C005CAF9E /* Build configuration list for PBXNativeTarget "OscillatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41FB6A91CD2EC4C005CAF9E /* Debug */,
+				E41FB6AA1CD2EC4C005CAF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E41FB6AB1CD2EC4C005CAF9E /* Build configuration list for PBXNativeTarget "OscillatorUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41FB6AC1CD2EC4C005CAF9E /* Debug */,
+				E41FB6AD1CD2EC4C005CAF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E41FB6751CD2EC4C005CAF9E /* Project object */;
+}
