@@ -19,6 +19,15 @@ class ViewController: UIViewController {
     @IBOutlet var frequencyLabel: UILabel!
     @IBOutlet var amplitudeLabel: UILabel!
     
+    /* We want to make sure we initialize our sliders to have 
+        appropriate value ranges for controlling our oscillator. These 
+        values our set in our Main.storyboard file. To see this, click
+        on the grey circle next to the IBOutlets below. A pop-up will 
+        appear, showing you the slider in the storboard. Click on it. 
+        On the right-hand side, you will see where the Maximum, Minimum, 
+        and Current values for the slider is set. The Current value is 
+        the initial, starting value.*/
+    
     @IBOutlet var frequencySlider: UISlider!
     @IBOutlet var amplitudeSlider: UISlider!
 
@@ -30,7 +39,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         /* Just like the earlier examples, we'll set AudioKit's output
-        and start the AudioKit engine when the app starts, but we wont'
+        and start the AudioKit engine when the app starts, but we won't
         start our oscillator just yet... */
         
         AudioKit.output = oscillator
@@ -55,6 +64,7 @@ class ViewController: UIViewController {
         /* Stop the oscillator from playing whenever the "Stop" button
         is pressed */
         oscillator.stop()
+        
     }
     
     @IBAction func changeFrequency(sender: AnyObject) {

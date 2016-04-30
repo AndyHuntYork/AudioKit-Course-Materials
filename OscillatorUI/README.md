@@ -20,3 +20,15 @@ if oscillator.isStarted == true {
    	oscillator.start()
 }
 ```
+
+Another exercise / question could be, "Currently, the labels display the last known values of the 
+oscillator's amplitude and frequency properties. If the oscillator has stopped, how would you set 
+these values to 0?"
+
+The solution would be to detect if the oscillator has stopped, and if it has, then set the label 
+values like so:
+
+```        
+frequencyLabel?.text = "0.0"
+amplitudeLabel?.text = "0.0"
+```
