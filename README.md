@@ -1,6 +1,8 @@
 # AudioKit-Course-Materials
 Course Materials for Dr. Hunt's iOS - audio programming course
 
+All examples use the [Swift programming language](https://developer.apple.com/swift/)
+
 For instructions on how to Download and install the AudioKit framework into your project, take a 
 look at Aure's screencast on the [AudioKit Downloads page](http://audiokit.io/downloads/).
 
