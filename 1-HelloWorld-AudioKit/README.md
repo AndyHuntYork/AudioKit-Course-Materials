@@ -11,4 +11,4 @@ oscillator.amplitude =  0.25
 oscillator.frequency =  880
 ```
 
-The documentation for `AKOscillator` can be found [here](http://audiokit.io/docs/Classes/AKOscillator.html)];
+The documentation for `AKOscillator` can be found [here](http://audiokit.io/docs/Classes/AKOscillator.html);

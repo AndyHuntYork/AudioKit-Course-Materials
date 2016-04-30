@@ -1,6 +1,6 @@
-# AudioFilePlayback
+# AudioFileReverb
 
-The Hello World app demonstrates how to play an audio file.
+The AudioFileReverb app demonstrates how to play an audio file.
 
 The documentation for `AKReverb` can be found [here](http://audiokit.io/docs/Classes/AKReverb.html).
 
