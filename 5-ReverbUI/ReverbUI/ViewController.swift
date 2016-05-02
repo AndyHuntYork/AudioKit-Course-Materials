@@ -34,10 +34,10 @@ class ViewController: UIViewController {
          the player is playing when we press the button, then we want to stop 
          the player. If the player is not playing when we press the button, 
          then we want to turn the player on. */
-        if reverbAudioPlayer.audioPlayer.isPlaying == true {
-            reverbAudioPlayer.audioPlayer.stop()
-        } else if reverbAudioPlayer.audioPlayer.isPlaying == false {
-            reverbAudioPlayer.audioPlayer.start()
+        if reverbAudioPlayer.audioLoopPlayer.isPlaying == true {
+            reverbAudioPlayer.audioLoopPlayer.stop()
+        } else if reverbAudioPlayer.audioLoopPlayer.isPlaying == false {
+            reverbAudioPlayer.audioLoopPlayer.start()
         }
     }
     

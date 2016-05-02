@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     @IBOutlet var frequencySlider: UISlider!
     @IBOutlet var amplitudeSlider: UISlider!
 
-    
+    // Create variables for our oscillator
     var oscillator = AKOscillator()
 
     override func viewDidLoad() {

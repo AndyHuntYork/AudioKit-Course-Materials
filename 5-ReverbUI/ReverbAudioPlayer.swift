@@ -8,26 +8,23 @@
 
 import AudioKit
 
-//Create global variables to access our audio loop file
-let bundle = NSBundle.mainBundle()
-let file = bundle.pathForResource("drumloop", ofType: "wav")
-//Create a global varable for our audio player, and use our loop file as input
-let audioLooplayer = AKAudioPlayer(file!)
-//Create a instance of AKReverb, and use our audioLoopPlayer as it's input
-var reverb = AKReverb(audioLooplayer)
+public class ReverbAudioPlayer {
 
-public class ReverbAudioPlayer: NSObject {
+    // Create variables for our audio player and our reverb effect
+    var audioLoopPlayer: AKAudioPlayer
+    var reverb: AKReverb
     
-    /* Create an internal variable for our class so we can access our audio
-        player's properties in our class methods */
-    let audioPlayer = audioLooplayer
-    
-    override init() {
-        super.init()
+    init() {
         
-        //This is where we set our audio player and reverb properties
-        audioPlayer.looping = true
-        reverb = AKReverb(audioPlayer)
+        let bundle = NSBundle.mainBundle()
+        let file = bundle.pathForResource("drumloop", ofType: "wav")
+
+        audioLoopPlayer = AKAudioPlayer(file!)
+        reverb = AKReverb(audioLoopPlayer)
+        
+        // This is where we set our audio player and reverb properties
+        audioLoopPlayer.looping = true
+        reverb = AKReverb(audioLoopPlayer)
         reverb.dryWetMix = 0.5
         reverb.loadFactoryPreset(.Cathedral)
 
@@ -39,11 +36,11 @@ public class ReverbAudioPlayer: NSObject {
     /* These functions are exposed to our View Controller, so that we can
     use our UIButton to toggle the audio player on and off. */
     public func startSound() {
-        audioPlayer.start()
+        audioLoopPlayer.start()
     }
     
     public func stopSound(){
-        audioPlayer.stop()
+        audioLoopPlayer.stop()
     }
     
     

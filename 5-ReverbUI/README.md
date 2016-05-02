@@ -30,6 +30,16 @@ These functions are called whenever we interact with our UIElements. Whenever we
 button, the `toggleSound` method will call our `startSound` and `stopSound` functions, which turn
 our audio player on and off based on whether or not hte sound is currently playing.
 
+The `setReverbMixValue` function expects a single parameter, `reverbMixValue`, which is a float. 
+Whenever the user moves our `UISlider`, the `setDryWetMixValue` function is called. This in turn
+calls the `setReverbMixValue`:
+
+```
+@IBAction func setDryWetMixValue(sender: AnyObject) {
+     reverbAudioPlayer.setReverbMixValue(dryWeMixSlider.value)
+}
+```
+
 While a bit more complex in terms of structure, nothing new as far as AudioKit is introduced. 
 However, if students are able to fully understand how this example works, they will be well-prepared
 to dive into more the more complex examples that are included in the AudioKit repository.
