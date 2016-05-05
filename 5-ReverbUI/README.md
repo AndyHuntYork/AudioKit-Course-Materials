@@ -1,6 +1,6 @@
 # Reverb-UI
 
-The AudioFileReverb app demonstrates how to play an audio file, and affect that file with 
+The ReverbUI app demonstrates how to play an audio file, and affect that file with 
 reverb controlled through a `UISlider`.
 
 It's intended to provide students with a gentle introduction to topics such as classes, 
