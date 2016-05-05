@@ -34,24 +34,24 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func setDrumsVolume(sender: UISlider) {
+    @IBAction func setDrumsVolume(sender: AnyObject) {
         audioMixer.setDrumsVolume(drumsVolumeSlider.value)
-        drumsVolumeLabel.text = String(audioMixer.drums.volume)
+        drumsVolumeLabel.text = String(format: "%0.2f", audioMixer.drums.volume)
     }
     
-    @IBAction func setBassVolume(sender: UISlider) {
+    @IBAction func setBassVolume(sender: AnyObject) {
         audioMixer.setBassVolume(bassVolumeSlider.value)
-        bassVolumeLabel.text = String(audioMixer.bass.volume)
+        bassVolumeLabel.text = String(format: "%0.2f", audioMixer.bass.volume)
     }
     
-    @IBAction func setGuitarVolume(sender: UISlider) {
+    @IBAction func setGuitarVolume(sender: AnyObject) {
         audioMixer.setGuitarVolume(guitarVolumeSlider.value)
-        guitarVolumeLabel.text = String(audioMixer.guitar.volume)
+        guitarVolumeLabel.text = String(format: "%0.2f", audioMixer.guitar.volume)
     }
     
-    @IBAction func setLeadVolume(sender: UISlider) {
+    @IBAction func setLeadVolume(sender: AnyObject) {
         audioMixer.setLeadVolume(leadVolumeSlider.value)
-        leadLineVolumeLabel.text = String(audioMixer.lead.volume)
+        leadLineVolumeLabel.text = String(format: "%0.2f", audioMixer.lead.volume)
     }
     
 
@@ -62,4 +62,3 @@ class ViewController: UIViewController {
 
 
 }
-
