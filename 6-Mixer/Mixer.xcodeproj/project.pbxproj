@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E436004D1CD77AE900809924 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436004C1CD77AE900809924 /* AppDelegate.swift */; };
+		E436004F1CD77AE900809924 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436004E1CD77AE900809924 /* ViewController.swift */; };
+		E43600521CD77AE900809924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43600501CD77AE900809924 /* Main.storyboard */; };
+		E43600541CD77AE900809924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43600531CD77AE900809924 /* Assets.xcassets */; };
+		E43600571CD77AE900809924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43600551CD77AE900809924 /* LaunchScreen.storyboard */; };
+		E43600621CD77AE900809924 /* MixerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43600611CD77AE900809924 /* MixerTests.swift */; };
+		E436006D1CD77AE900809924 /* MixerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436006C1CD77AE900809924 /* MixerUITests.swift */; };
+		E436007C1CD77AFD00809924 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E436007A1CD77AF700809924 /* AudioKit.framework */; };
+		E436007D1CD77AFD00809924 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E436007A1CD77AF700809924 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E43600801CD77B8700809924 /* AudioMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436007F1CD77B8700809924 /* AudioMixer.swift */; };
+		E43600851CD77C1A00809924 /* bassloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43600811CD77C1A00809924 /* bassloop.wav */; };
+		E43600861CD77C1A00809924 /* drumloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43600821CD77C1A00809924 /* drumloop.wav */; };
+		E43600871CD77C1A00809924 /* guitarloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43600831CD77C1A00809924 /* guitarloop.wav */; };
+		E43600881CD77C1A00809924 /* leadloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43600841CD77C1A00809924 /* leadloop.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E436005E1CD77AE900809924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43600411CD77AE900809924 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E43600481CD77AE900809924;
+			remoteInfo = Mixer;
+		};
+		E43600691CD77AE900809924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43600411CD77AE900809924 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E43600481CD77AE900809924;
+			remoteInfo = Mixer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E436007E1CD77AFD00809924 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E436007D1CD77AFD00809924 /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E43600491CD77AE900809924 /* Mixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E436004C1CD77AE900809924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E436004E1CD77AE900809924 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E43600511CD77AE900809924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E43600531CD77AE900809924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E43600561CD77AE900809924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E43600581CD77AE900809924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E436005D1CD77AE900809924 /* MixerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43600611CD77AE900809924 /* MixerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerTests.swift; sourceTree = "<group>"; };
+		E43600631CD77AE900809924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43600681CD77AE900809924 /* MixerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E436006C1CD77AE900809924 /* MixerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerUITests.swift; sourceTree = "<group>"; };
+		E436006E1CD77AE900809924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E436007A1CD77AF700809924 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		E436007F1CD77B8700809924 /* AudioMixer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioMixer.swift; sourceTree = "<group>"; };
+		E43600811CD77C1A00809924 /* bassloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bassloop.wav; sourceTree = "<group>"; };
+		E43600821CD77C1A00809924 /* drumloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drumloop.wav; sourceTree = "<group>"; };
+		E43600831CD77C1A00809924 /* guitarloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitarloop.wav; sourceTree = "<group>"; };
+		E43600841CD77C1A00809924 /* leadloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = leadloop.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E43600461CD77AE900809924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E436007C1CD77AFD00809924 /* AudioKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E436005A1CD77AE900809924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43600651CD77AE900809924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E43600401CD77AE900809924 = {
+			isa = PBXGroup;
+			children = (
+				E436004B1CD77AE900809924 /* Mixer */,
+				E43600601CD77AE900809924 /* MixerTests */,
+				E436006B1CD77AE900809924 /* MixerUITests */,
+				E436004A1CD77AE900809924 /* Products */,
+				E436007A1CD77AF700809924 /* AudioKit.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		E436004A1CD77AE900809924 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E43600491CD77AE900809924 /* Mixer.app */,
+				E436005D1CD77AE900809924 /* MixerTests.xctest */,
+				E43600681CD77AE900809924 /* MixerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E436004B1CD77AE900809924 /* Mixer */ = {
+			isa = PBXGroup;
+			children = (
+				E436004C1CD77AE900809924 /* AppDelegate.swift */,
+				E436004E1CD77AE900809924 /* ViewController.swift */,
+				E436007F1CD77B8700809924 /* AudioMixer.swift */,
+				E43600501CD77AE900809924 /* Main.storyboard */,
+				E43600531CD77AE900809924 /* Assets.xcassets */,
+				E43600551CD77AE900809924 /* LaunchScreen.storyboard */,
+				E43600581CD77AE900809924 /* Info.plist */,
+				E43600811CD77C1A00809924 /* bassloop.wav */,
+				E43600821CD77C1A00809924 /* drumloop.wav */,
+				E43600831CD77C1A00809924 /* guitarloop.wav */,
+				E43600841CD77C1A00809924 /* leadloop.wav */,
+			);
+			path = Mixer;
+			sourceTree = "<group>";
+		};
+		E43600601CD77AE900809924 /* MixerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E43600611CD77AE900809924 /* MixerTests.swift */,
+				E43600631CD77AE900809924 /* Info.plist */,
+			);
+			path = MixerTests;
+			sourceTree = "<group>";
+		};
+		E436006B1CD77AE900809924 /* MixerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E436006C1CD77AE900809924 /* MixerUITests.swift */,
+				E436006E1CD77AE900809924 /* Info.plist */,
+			);
+			path = MixerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E43600481CD77AE900809924 /* Mixer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43600711CD77AE900809924 /* Build configuration list for PBXNativeTarget "Mixer" */;
+			buildPhases = (
+				E43600451CD77AE900809924 /* Sources */,
+				E43600461CD77AE900809924 /* Frameworks */,
+				E43600471CD77AE900809924 /* Resources */,
+				E436007E1CD77AFD00809924 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mixer;
+			productName = Mixer;
+			productReference = E43600491CD77AE900809924 /* Mixer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E436005C1CD77AE900809924 /* MixerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43600741CD77AE900809924 /* Build configuration list for PBXNativeTarget "MixerTests" */;
+			buildPhases = (
+				E43600591CD77AE900809924 /* Sources */,
+				E436005A1CD77AE900809924 /* Frameworks */,
+				E436005B1CD77AE900809924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E436005F1CD77AE900809924 /* PBXTargetDependency */,
+			);
+			name = MixerTests;
+			productName = MixerTests;
+			productReference = E436005D1CD77AE900809924 /* MixerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E43600671CD77AE900809924 /* MixerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43600771CD77AE900809924 /* Build configuration list for PBXNativeTarget "MixerUITests" */;
+			buildPhases = (
+				E43600641CD77AE900809924 /* Sources */,
+				E43600651CD77AE900809924 /* Frameworks */,
+				E43600661CD77AE900809924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E436006A1CD77AE900809924 /* PBXTargetDependency */,
+			);
+			name = MixerUITests;
+			productName = MixerUITests;
+			productReference = E43600681CD77AE900809924 /* MixerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E43600411CD77AE900809924 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Nicholas Arner";
+				TargetAttributes = {
+					E43600481CD77AE900809924 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E436005C1CD77AE900809924 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E43600481CD77AE900809924;
+					};
+					E43600671CD77AE900809924 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E43600481CD77AE900809924;
+					};
+				};
+			};
+			buildConfigurationList = E43600441CD77AE900809924 /* Build configuration list for PBXProject "Mixer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E43600401CD77AE900809924;
+			productRefGroup = E436004A1CD77AE900809924 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E43600481CD77AE900809924 /* Mixer */,
+				E436005C1CD77AE900809924 /* MixerTests */,
+				E43600671CD77AE900809924 /* MixerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E43600471CD77AE900809924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43600861CD77C1A00809924 /* drumloop.wav in Resources */,
+				E43600571CD77AE900809924 /* LaunchScreen.storyboard in Resources */,
+				E43600541CD77AE900809924 /* Assets.xcassets in Resources */,
+				E43600881CD77C1A00809924 /* leadloop.wav in Resources */,
+				E43600521CD77AE900809924 /* Main.storyboard in Resources */,
+				E43600871CD77C1A00809924 /* guitarloop.wav in Resources */,
+				E43600851CD77C1A00809924 /* bassloop.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E436005B1CD77AE900809924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43600661CD77AE900809924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E43600451CD77AE900809924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E436004F1CD77AE900809924 /* ViewController.swift in Sources */,
+				E436004D1CD77AE900809924 /* AppDelegate.swift in Sources */,
+				E43600801CD77B8700809924 /* AudioMixer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43600591CD77AE900809924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43600621CD77AE900809924 /* MixerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43600641CD77AE900809924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E436006D1CD77AE900809924 /* MixerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E436005F1CD77AE900809924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E43600481CD77AE900809924 /* Mixer */;
+			targetProxy = E436005E1CD77AE900809924 /* PBXContainerItemProxy */;
+		};
+		E436006A1CD77AE900809924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E43600481CD77AE900809924 /* Mixer */;
+			targetProxy = E43600691CD77AE900809924 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E43600501CD77AE900809924 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43600511CD77AE900809924 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E43600551CD77AE900809924 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43600561CD77AE900809924 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E436006F1CD77AE900809924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E43600701CD77AE900809924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E43600721CD77AE900809924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Mixer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nfa.Mixer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E43600731CD77AE900809924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Mixer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nfa.Mixer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E43600751CD77AE900809924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MixerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nfa.MixerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mixer.app/Mixer";
+			};
+			name = Debug;
+		};
+		E43600761CD77AE900809924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MixerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nfa.MixerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mixer.app/Mixer";
+			};
+			name = Release;
+		};
+		E43600781CD77AE900809924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MixerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nfa.MixerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Mixer;
+			};
+			name = Debug;
+		};
+		E43600791CD77AE900809924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MixerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nfa.MixerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Mixer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E43600441CD77AE900809924 /* Build configuration list for PBXProject "Mixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E436006F1CD77AE900809924 /* Debug */,
+				E43600701CD77AE900809924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43600711CD77AE900809924 /* Build configuration list for PBXNativeTarget "Mixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43600721CD77AE900809924 /* Debug */,
+				E43600731CD77AE900809924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E43600741CD77AE900809924 /* Build configuration list for PBXNativeTarget "MixerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43600751CD77AE900809924 /* Debug */,
+				E43600761CD77AE900809924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E43600771CD77AE900809924 /* Build configuration list for PBXNativeTarget "MixerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43600781CD77AE900809924 /* Debug */,
+				E43600791CD77AE900809924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E43600411CD77AE900809924 /* Project object */;
+}
