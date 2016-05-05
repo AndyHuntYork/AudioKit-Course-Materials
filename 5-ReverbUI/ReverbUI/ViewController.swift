@@ -12,9 +12,15 @@ import AudioKit
 class ViewController: UIViewController {
 
     /* This outlet allows us to access the value of our UISlider, so that we
+     @IBOutlet var reverbAmmountLabel: UILabel!
         can use it to set our reverb dry/wet mix value later on...*/
+
     @IBOutlet var dryWeMixSlider: UISlider!
     
+    /* This outlet lets us display how much reverb we're applying to the audio
+    file */
+    @IBOutlet var reverbAmmountLabel: UILabel!
+
     //Create a global variable for our Reverb Audio Player
     var reverbAudioPlayer: ReverbAudioPlayer!
 
@@ -43,9 +49,12 @@ class ViewController: UIViewController {
     
     /* This method is called whenever our slider is moved. In turn, it calls the
         setReverbMixValue of our ReverbAudioPlayer class. When setReverbMixValue
-        is called, we pass it the value of our slider. */
+        is called, we pass it the value of our slider. We also send the value 
+        to our reverbAmmountLabel, so we can see how much reverb is being 
+        applied to the audio file. */
     @IBAction func setDryWetMixValue(sender: AnyObject) {
         reverbAudioPlayer.setReverbMixValue(dryWeMixSlider.value)
+        reverbAmmountLabel.text = String(reverbAudioPlayer.reverb.dryWetMix)
     }
     
     
