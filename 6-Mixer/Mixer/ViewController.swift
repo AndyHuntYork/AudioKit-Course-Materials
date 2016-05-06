@@ -32,7 +32,8 @@ class ViewController: UIViewController {
         audioMixer = AudioMixer()
     }
     
-    
+    /* Use these functions to set the volume for each individual audio track, and
+        update the value of the corresponding labels */
     
     @IBAction func setDrumsVolume(sender: AnyObject) {
         audioMixer.setDrumsVolume(drumsVolumeSlider.value)

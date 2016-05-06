@@ -25,22 +25,26 @@ public class AudioMixer {
         let guitarFile = bundle.pathForResource("guitarloop", ofType: "wav")
         let leadFile   = bundle.pathForResource("leadloop", ofType: "wav")
 
-        
+        //Create audio players for each track
         drums  = AKAudioPlayer(drumFile!)
         bass   = AKAudioPlayer(bassFile!)
         guitar = AKAudioPlayer(guitarFile!)
         lead   = AKAudioPlayer(leadFile!)
         
+        //Set each track to loop
         drums.looping  = true
         bass.looping   = true
         guitar.looping = true
         lead.looping   = true
         
+        //Create a mixer that uses our audio loops as inputs
         let mixer = AKMixer(drums, bass, guitar, lead)
         
+        //Set AudioKit's output to be our mixer, and start the AudioKit engine
         AudioKit.output = mixer
         AudioKit.start()
         
+        //Start playing each of the individual audio tracks
         drums.play()
         bass.play()
         guitar.play()
