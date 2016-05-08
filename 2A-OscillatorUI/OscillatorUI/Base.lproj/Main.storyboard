@@ -30,7 +30,7 @@
                                     <action selector="changeAmplitude:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hj0-gb-GnI"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="440" minValue="220" maxValue="880" translatesAutoresizingMaskIntoConstraints="NO" id="fYh-hK-afn">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="660" minValue="220" maxValue="880" translatesAutoresizingMaskIntoConstraints="NO" id="fYh-hK-afn">
                                 <rect key="frame" x="123" y="281" width="356" height="31"/>
                                 <connections>
                                     <action selector="changeFrequency:" destination="BYZ-38-t0r" eventType="valueChanged" id="vbS-Fh-TaO"/>
