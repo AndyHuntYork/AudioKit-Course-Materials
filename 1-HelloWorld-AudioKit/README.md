@@ -18,10 +18,8 @@ substituting a different one in-place of `AKOscillator`. For example, to change 
 an `AKOscillator` type to an `AKSawtoothOscillator`, you would change line 16 in
 `ViewController.swift` from 
 
-```
-var oscillator = AKOscillator()
-```
+`var oscillator = AKOscillator()`
+
 to
-```
-var oscillator = AKSawtoothOscillator()
-```
+
+`var oscillator = AKSawtoothOscillator()`
