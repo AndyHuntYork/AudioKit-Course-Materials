@@ -93,6 +93,7 @@
                         <constraints>
                             <constraint firstItem="YXA-NT-orS" firstAttribute="baseline" secondItem="NRW-yg-EO6" secondAttribute="baseline" id="12P-9Q-W8p"/>
                             <constraint firstItem="6WR-mW-oS3" firstAttribute="centerX" secondItem="MSR-WM-ESk" secondAttribute="centerX" constant="17.5" id="3GW-jt-EK6">
+                                <variation key="heightClass=compact" constant="5.5"/>
                                 <variation key="widthClass=compact" constant="6.5"/>
                                 <variation key="widthClass=regular" constant="0.5"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.5"/>
@@ -102,12 +103,18 @@
                             <constraint firstItem="NRW-yg-EO6" firstAttribute="trailing" secondItem="MSR-WM-ESk" secondAttribute="trailing" id="4BK-Uy-bTU"/>
                             <constraint firstItem="MSR-WM-ESk" firstAttribute="top" secondItem="YXA-NT-orS" secondAttribute="bottom" constant="22" id="4Ea-B5-VJ8"/>
                             <constraint firstItem="6WR-mW-oS3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6pd-YT-PiX">
+                                <variation key="heightClass=compact" constant="-6.5"/>
+                                <variation key="widthClass=compact" constant="6.5"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="6.5"/>
                             </constraint>
-                            <constraint firstItem="6WR-mW-oS3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="196" id="9Ak-t7-Wlj"/>
+                            <constraint firstItem="6WR-mW-oS3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="196" id="9Ak-t7-Wlj">
+                                <variation key="heightClass=compact-widthClass=regular" constant="99"/>
+                            </constraint>
                             <constraint firstItem="6WR-mW-oS3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="296" id="CuM-ex-d0r"/>
                             <constraint firstItem="NRW-yg-EO6" firstAttribute="trailing" secondItem="MSR-WM-ESk" secondAttribute="trailing" id="DNm-VF-Axp"/>
-                            <constraint firstItem="YXA-NT-orS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="89" id="Ee2-Kv-dWm"/>
+                            <constraint firstItem="YXA-NT-orS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="89" id="Ee2-Kv-dWm">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="MSR-WM-ESk" firstAttribute="top" secondItem="YXA-NT-orS" secondAttribute="bottom" constant="22" id="H87-zy-5i0"/>
                             <constraint firstItem="YXA-NT-orS" firstAttribute="leading" secondItem="MSR-WM-ESk" secondAttribute="leading" id="I7T-zb-B82"/>
                             <constraint firstItem="YXA-NT-orS" firstAttribute="leading" secondItem="MSR-WM-ESk" secondAttribute="leading" id="MWX-ol-UDT"/>
@@ -115,8 +122,12 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MSR-WM-ESk" secondAttribute="bottom" constant="310" id="Qfl-Qk-CDc"/>
                             <constraint firstItem="MSR-WM-ESk" firstAttribute="top" secondItem="YXA-NT-orS" secondAttribute="bottom" constant="22" id="RUu-fi-C85"/>
                             <constraint firstItem="6WR-mW-oS3" firstAttribute="centerX" secondItem="MSR-WM-ESk" secondAttribute="centerX" id="TbC-5j-9ZN"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MSR-WM-ESk" secondAttribute="bottom" constant="189" id="UFT-Ui-nom"/>
-                            <constraint firstItem="6WR-mW-oS3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="247" id="XJY-Um-nne"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MSR-WM-ESk" secondAttribute="bottom" constant="189" id="UFT-Ui-nom">
+                                <variation key="heightClass=compact-widthClass=regular" constant="156"/>
+                            </constraint>
+                            <constraint firstItem="6WR-mW-oS3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="247" id="XJY-Um-nne">
+                                <variation key="heightClass=regular-widthClass=compact" constant="257"/>
+                            </constraint>
                             <constraint firstItem="YXA-NT-orS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="89" id="Ywq-Y9-t7e"/>
                             <constraint firstItem="NRW-yg-EO6" firstAttribute="baseline" secondItem="YXA-NT-orS" secondAttribute="baseline" id="ciY-jQ-4In"/>
                             <constraint firstItem="YXA-NT-orS" firstAttribute="baseline" secondItem="NRW-yg-EO6" secondAttribute="baseline" id="dZl-HU-hXH"/>
@@ -125,7 +136,9 @@
                             <constraint firstItem="MSR-WM-ESk" firstAttribute="top" secondItem="YXA-NT-orS" secondAttribute="bottom" constant="22" id="jdt-cS-NOc"/>
                             <constraint firstItem="6WR-mW-oS3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l3X-9C-1Ad"/>
                             <constraint firstItem="6WR-mW-oS3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="lr7-vc-J2z">
+                                <variation key="heightClass=compact" constant="61"/>
                                 <variation key="heightClass=regular" constant="247"/>
+                                <variation key="widthClass=compact" constant="170"/>
                                 <variation key="widthClass=regular" constant="196"/>
                                 <variation key="heightClass=compact-widthClass=compact" constant="54"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="43"/>
@@ -136,13 +149,18 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="-9"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="-7"/>
                             </constraint>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MSR-WM-ESk" secondAttribute="bottom" constant="310" id="n6P-h7-Qwc"/>
-                            <constraint firstItem="6WR-mW-oS3" firstAttribute="centerX" secondItem="MSR-WM-ESk" secondAttribute="centerX" id="nMF-1J-qOu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MSR-WM-ESk" secondAttribute="bottom" constant="310" id="n6P-h7-Qwc">
+                                <variation key="heightClass=regular-widthClass=compact" constant="303"/>
+                            </constraint>
+                            <constraint firstItem="6WR-mW-oS3" firstAttribute="centerX" secondItem="MSR-WM-ESk" secondAttribute="centerX" id="nMF-1J-qOu">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-7.5"/>
+                            </constraint>
                             <constraint firstItem="6WR-mW-oS3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nha-T0-OKb"/>
                             <constraint firstItem="NRW-yg-EO6" firstAttribute="trailing" secondItem="MSR-WM-ESk" secondAttribute="trailing" id="qyP-yo-CSn"/>
                             <constraint firstItem="YXA-NT-orS" firstAttribute="baseline" secondItem="NRW-yg-EO6" secondAttribute="baseline" id="xEu-Ul-XF8"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MSR-WM-ESk" secondAttribute="bottom" constant="310" id="zWp-Nj-Wuc">
-                                <variation key="widthClass=compact" constant="286"/>
+                                <variation key="heightClass=compact" constant="181"/>
+                                <variation key="widthClass=compact" constant="191"/>
                                 <variation key="widthClass=regular" constant="189"/>
                                 <variation key="heightClass=compact-widthClass=compact" constant="148"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="141"/>
@@ -263,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604.5" y="336"/>
+            <point key="canvasLocation" x="604" y="336"/>
         </scene>
     </scenes>
 </document>

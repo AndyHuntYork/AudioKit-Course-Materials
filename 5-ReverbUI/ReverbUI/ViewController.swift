@@ -30,6 +30,9 @@ class ViewController: UIViewController {
         
         //Here, we create an instance of our ReverbAudioPlayer class
         reverbAudioPlayer = ReverbAudioPlayer()
+        
+        //This displays our reverb's initial dryWetMix value
+        reverbAmmountLabel.text = String(format: "%0.2f", reverbAudioPlayer.reverb.dryWetMix)
     }
 
     
@@ -54,7 +57,7 @@ class ViewController: UIViewController {
         applied to the audio file. */
     @IBAction func setDryWetMixValue(sender: AnyObject) {
         reverbAudioPlayer.setReverbMixValue(dryWeMixSlider.value)
-        reverbAmmountLabel.text = String(reverbAudioPlayer.reverb.dryWetMix)
+        reverbAmmountLabel.text = String(format: "%0.2f", reverbAudioPlayer.reverb.dryWetMix)
     }
     
     
