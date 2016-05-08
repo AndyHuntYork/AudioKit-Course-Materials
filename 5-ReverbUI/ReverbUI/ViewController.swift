@@ -11,14 +11,11 @@ import AudioKit
 
 class ViewController: UIViewController {
 
-    /* This outlet allows us to access the value of our UISlider, so that we
-     @IBOutlet var reverbAmmountLabel: UILabel!
-        can use it to set our reverb dry/wet mix value later on...*/
+    /* This outlet allows us to access the value of our UISlider, so that we can use it to set our reverb dry/wet mix value later on...*/
 
     @IBOutlet var dryWeMixSlider: UISlider!
     
-    /* This outlet lets us display how much reverb we're applying to the audio
-    file */
+    /* This outlet lets us display how much reverb we're applying to the audio file */
     @IBOutlet var reverbAmmountLabel: UILabel!
 
     //Create a global variable for our Reverb Audio Player
