@@ -12,3 +12,16 @@ oscillator.frequency =  880
 ```
 
 The documentation for `AKOscillator` can be found [here](http://audiokit.io/docs/Classes/AKOscillator.html);
+
+AudioKit has [six different oscillators types](http://audiokit.io/docs/Oscillator%20Nodes.html). Try 
+substituting a different one in-place of `AKOscillator`. For example, to change the oscillator from 
+an `AKOscillator` type to an `AKSawtoothOscillator`, you would change line 16 in
+`ViewController.swift` from 
+
+```
+var oscillator = AKOscillator()
+```
+to
+```
+var oscillator = AKSawtoothOscillator()
+```
