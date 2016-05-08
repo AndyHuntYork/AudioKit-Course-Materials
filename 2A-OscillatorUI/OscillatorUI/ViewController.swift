@@ -56,15 +56,14 @@ class ViewController: UIViewController {
         
         oscillator.start()
     
-        frequencyLabel?.text = "\(oscillator.frequency)"
-        amplitudeLabel?.text = "\(oscillator.amplitude)"
+        frequencyLabel.text = String(format: "%0.2f", oscillator.frequency)
+        amplitudeLabel.text = String(format: "%0.2f", oscillator.amplitude)
     }
     
     @IBAction func stopSound(sender: AnyObject) {
         /* Stop the oscillator from playing whenever the "Stop" button
         is pressed */
         oscillator.stop()
-        
     }
     
     @IBAction func changeFrequency(sender: AnyObject) {
@@ -79,12 +78,12 @@ class ViewController: UIViewController {
         to update our frequency label. The line below sets the our 
         label's `text` property to that of our oscillator's frequency
         property */
-        frequencyLabel?.text = "\(oscillator.frequency)"
+        frequencyLabel.text = String(format: "%0.2f", oscillator.frequency)
     }
     
     @IBAction func changeAmplitude(sender: AnyObject) {
         oscillator.amplitude = Double(amplitudeSlider.value)
-        amplitudeLabel?.text = "\(oscillator.amplitude)"
+        amplitudeLabel.text = String(format: "%0.2f", oscillator.amplitude)
     }
     
     

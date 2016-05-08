@@ -18,112 +18,141 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haF-qW-GEZ">
-                                <rect key="frame" x="284" y="68" width="34" height="30"/>
+                                <rect key="frame" x="284" y="110" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0RH-u5-022"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gcw-a7-V0W">
-                                <rect key="frame" x="123" y="424" width="356" height="31"/>
-                                <connections>
-                                    <action selector="changeAmplitude:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hj0-gb-GnI"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="660" minValue="220" maxValue="880" translatesAutoresizingMaskIntoConstraints="NO" id="fYh-hK-afn">
-                                <rect key="frame" x="123" y="281" width="356" height="31"/>
-                                <connections>
-                                    <action selector="changeFrequency:" destination="BYZ-38-t0r" eventType="valueChanged" id="vbS-Fh-TaO"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amplitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt1-r1-1py">
-                                <rect key="frame" x="125" y="390" width="78" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z67-aK-HTv">
-                                <rect key="frame" x="124" y="234" width="81" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxW-RV-Fdw">
-                                <rect key="frame" x="435" y="234" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyl-7t-r2M">
-                                <rect key="frame" x="435" y="390" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyB-vS-vsD">
-                                <rect key="frame" x="285" y="124" width="32" height="30"/>
+                                <rect key="frame" x="285" y="166" width="32" height="30"/>
                                 <state key="normal" title="Stop"/>
                                 <connections>
                                     <action selector="stopSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g2a-w4-6jM"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gcw-a7-V0W">
+                                <rect key="frame" x="123" y="380" width="356" height="31"/>
+                                <connections>
+                                    <action selector="changeAmplitude:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hj0-gb-GnI"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amplitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt1-r1-1py">
+                                <rect key="frame" x="125" y="346" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyl-7t-r2M">
+                                <rect key="frame" x="435" y="346" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="660" minValue="220" maxValue="880" translatesAutoresizingMaskIntoConstraints="NO" id="fYh-hK-afn">
+                                <rect key="frame" x="123" y="271" width="356" height="31"/>
+                                <connections>
+                                    <action selector="changeFrequency:" destination="BYZ-38-t0r" eventType="valueChanged" id="vbS-Fh-TaO"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z67-aK-HTv">
+                                <rect key="frame" x="124" y="224" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxW-RV-Fdw">
+                                <rect key="frame" x="435" y="224" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="haF-qW-GEZ" firstAttribute="centerX" secondItem="lyB-vS-vsD" secondAttribute="centerX" id="4VJ-NS-wxF"/>
                             <constraint firstItem="fYh-hK-afn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="8lx-q2-qrM">
+                                <variation key="widthClass=compact" constant="-4"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="3"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstAttribute="trailing" secondItem="NxW-RV-Fdw" secondAttribute="trailing" constant="123" id="CBk-ft-uMQ">
+                                <variation key="widthClass=compact" constant="85"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="78"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="124"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="81"/>
                             </constraint>
                             <constraint firstItem="Dyl-7t-r2M" firstAttribute="trailing" secondItem="Gcw-a7-V0W" secondAttribute="trailing" id="E0p-Z8-kGc">
                                 <variation key="heightClass=compact-widthClass=regular" constant="1"/>
                             </constraint>
                             <constraint firstItem="fYh-hK-afn" firstAttribute="leading" secondItem="xt1-r1-1py" secondAttribute="leading" id="Ivw-oa-yef">
-                                <variation key="heightClass=compact-widthClass=regular" constant="-1"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="Dyl-7t-r2M" firstAttribute="top" secondItem="fYh-hK-afn" secondAttribute="bottom" constant="79" id="J2M-Xx-40N">
-                                <variation key="heightClass=compact-widthClass=regular" constant="66"/>
+                            <constraint firstItem="Dyl-7t-r2M" firstAttribute="top" secondItem="fYh-hK-afn" secondAttribute="bottom" constant="45" id="J2M-Xx-40N">
+                                <variation key="heightClass=compact" constant="13"/>
+                                <variation key="widthClass=compact" constant="32"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="1"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="34"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="58"/>
                             </constraint>
                             <constraint firstItem="NxW-RV-Fdw" firstAttribute="baseline" secondItem="Z67-aK-HTv" secondAttribute="baseline" id="KUR-QN-Ool"/>
                             <constraint firstItem="Dyl-7t-r2M" firstAttribute="trailing" secondItem="fYh-hK-afn" secondAttribute="trailing" id="Lmm-T1-U7H">
-                                <variation key="heightClass=compact-widthClass=regular" constant="1"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="NxW-RV-Fdw" firstAttribute="trailing" secondItem="fYh-hK-afn" secondAttribute="trailing" id="Mhh-ly-cUE"/>
-                            <constraint firstItem="NxW-RV-Fdw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="214" id="OeC-Tx-TvQ">
+                            <constraint firstItem="NxW-RV-Fdw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="204" id="OeC-Tx-TvQ">
+                                <variation key="heightClass=compact" constant="166"/>
                                 <variation key="heightClass=regular" constant="390"/>
+                                <variation key="widthClass=compact" constant="160"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="143"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="120"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="186"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="402"/>
                             </constraint>
-                            <constraint firstItem="haF-qW-GEZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="PIJ-L2-Bzv">
+                            <constraint firstItem="haF-qW-GEZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="PIJ-L2-Bzv">
+                                <variation key="heightClass=compact" constant="33"/>
                                 <variation key="heightClass=regular" constant="69"/>
-                                <variation key="heightClass=compact-widthClass=regular" constant="-5"/>
-                                <variation key="heightClass=regular-widthClass=compact" constant="90"/>
+                                <variation key="widthClass=compact" constant="46"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="8"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="65"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="107"/>
                             </constraint>
-                            <constraint firstItem="Z67-aK-HTv" firstAttribute="centerX" secondItem="xt1-r1-1py" secondAttribute="centerX" id="fQf-0C-SQb"/>
+                            <constraint firstItem="Z67-aK-HTv" firstAttribute="centerX" secondItem="xt1-r1-1py" secondAttribute="centerX" id="fQf-0C-SQb">
+                                <variation key="widthClass=compact" constant="-1.5"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="1.5"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="1.5"/>
+                            </constraint>
                             <constraint firstItem="Dyl-7t-r2M" firstAttribute="baseline" secondItem="xt1-r1-1py" secondAttribute="baseline" id="hhb-qP-5LK"/>
                             <constraint firstItem="fYh-hK-afn" firstAttribute="top" secondItem="NxW-RV-Fdw" secondAttribute="bottom" constant="26" id="kdS-2S-pIN">
+                                <variation key="widthClass=compact" constant="30"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="13"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="27"/>
                             </constraint>
                             <constraint firstItem="lyB-vS-vsD" firstAttribute="centerX" secondItem="fYh-hK-afn" secondAttribute="centerX" id="nG2-M0-yzY">
+                                <variation key="heightClass=compact" constant="-1"/>
                                 <variation key="heightClass=regular" constant="-1"/>
-                                <variation key="heightClass=regular-widthClass=compact" constant="-1"/>
+                                <variation key="widthClass=compact" constant="7"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="-2"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="7"/>
                             </constraint>
                             <constraint firstItem="lyB-vS-vsD" firstAttribute="top" secondItem="haF-qW-GEZ" secondAttribute="bottom" constant="26" id="s5b-9X-daA">
-                                <variation key="heightClass=regular-widthClass=compact" constant="64"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="14"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="69"/>
                             </constraint>
                             <constraint firstItem="xt1-r1-1py" firstAttribute="leading" secondItem="Gcw-a7-V0W" secondAttribute="leading" id="sJg-gf-wnk">
                                 <variation key="heightClass=compact-widthClass=regular" constant="1"/>
                             </constraint>
                             <constraint firstItem="Gcw-a7-V0W" firstAttribute="top" secondItem="Dyl-7t-r2M" secondAttribute="bottom" constant="13" id="t2Y-B1-Evd">
+                                <variation key="widthClass=compact" constant="8"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="15"/>
                             </constraint>
-                            <constraint firstItem="NxW-RV-Fdw" firstAttribute="trailing" secondItem="Gcw-a7-V0W" secondAttribute="trailing" id="xUa-EN-csJ"/>
+                            <constraint firstItem="NxW-RV-Fdw" firstAttribute="trailing" secondItem="Gcw-a7-V0W" secondAttribute="trailing" id="xUa-EN-csJ">
+                                <variation key="heightClass=compact-widthClass=regular" constant="1"/>
+                            </constraint>
                         </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="amplitudeLabel" destination="Dyl-7t-r2M" id="mBh-VN-Mw1"/>
                         <outlet property="amplitudeSlider" destination="Gcw-a7-V0W" id="AyJ-vM-pDY"/>
@@ -133,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="426.75" y="376.5"/>
+            <point key="canvasLocation" x="498" y="421"/>
         </scene>
     </scenes>
 </document>
