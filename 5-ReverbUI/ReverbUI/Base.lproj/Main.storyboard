@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="440" minValue="220" maxValue="660" translatesAutoresizingMaskIntoConstraints="NO" id="kkb-ER-U4S">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kkb-ER-U4S">
                                 <rect key="frame" x="122" y="242" width="356" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="352" id="MCT-3a-MO3"/>
@@ -44,7 +44,7 @@
                                     <rect key="frame" x="221" y="242" width="359" height="31"/>
                                 </variation>
                                 <connections>
-                                    <action selector="setDryWetMixValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="RvO-3f-bJV"/>
+                                    <action selector="setDryWetMixValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="reH-Qe-hQD"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Op9-tX-WIm">
@@ -203,7 +203,7 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="dryWeMixSlider" destination="kkb-ER-U4S" id="gIo-ed-kMR"/>
+                        <outlet property="dryWeMixSlider" destination="kkb-ER-U4S" id="iwy-cD-MIl"/>
                         <outlet property="reverbAmmountLabel" destination="Op9-tX-WIm" id="VX1-qQ-8lX"/>
                     </connections>
                 </viewController>
