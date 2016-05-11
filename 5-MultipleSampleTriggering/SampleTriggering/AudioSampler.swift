@@ -43,7 +43,6 @@ public class AudioSampler {
     
     
     public func playSampleOne() {
-        print(playerOne.playhead)
         /* Here, we check if our audio player is playing. We also check whether
             or not our player's playhead (where in at in the audio file the 
             player is currently at) is less than the total length of the audio 
@@ -56,8 +55,11 @@ public class AudioSampler {
         } else {
             playerOne.play()
         }
-    }
         
+        //This will print out the current time value of the audio file
+        print(playerOne.playhead)
+    }
+    
     public func playSampleTwo() {
         if playerTwo.isPlaying && playerTwo.playhead < playerTwo.duration {
             playerTwo.stop()
