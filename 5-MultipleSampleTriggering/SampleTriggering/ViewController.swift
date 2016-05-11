@@ -26,16 +26,16 @@ class ViewController: UIViewController {
     
     
 
-    @IBAction func playSampleOne(sender: AnyObject) {
-        audioSampler.playSampleOne()
+    @IBAction func toggleSampleOne(sender: AnyObject) {
+        audioSampler.stopOrPlaySampleOne()
     }
     
-    @IBAction func playSampleTwo(sender: AnyObject) {
-        audioSampler.playSampleTwo()
+    @IBAction func toggleSampleTwo(sender: AnyObject) {
+        audioSampler.stopOrPlaySampleTwo()
     }
     
-    @IBAction func playSampleThree(sender: AnyObject) {
-        audioSampler.playSampleThree()
+    @IBAction func toggleSampleThree(sender: AnyObject) {
+        audioSampler.stopOrPlaySampleThree()
     }
 
 }

@@ -14,6 +14,8 @@ to a different audio track: a drums track, a bass track, a guitar track, and a l
 let mixer = AKMixer(drums, bass, guitar, lead)
 ```
 
+The documentation for `AKAudioPlayer` can be found [here](http://audiokit.io/docs/Classes/AKAudioPlayer.html). 
+
 In addition to controlling the volume of individual tracks, as shown in this example, you can also
 control the pan position of an individual audio track. To implement this, you would follow the method
 of using sliders to call `IBAction` methods, which would in-turn call a function to set the pan 

@@ -21,12 +21,12 @@ public class AudioSampler {
         let bundle = NSBundle.mainBundle()
         let sampleOne    = bundle.pathForResource("pianoSample", ofType: "wav")
         let sampleTwo    = bundle.pathForResource("drum-and-bass-loop", ofType: "wav")
-        let samplerThree = bundle.pathForResource("drum-and-bass-loop", ofType: "wav")
+        let sampleThree = bundle.pathForResource("siren", ofType: "wav")
             
         //Create audio players for each track
         playerOne   = AKAudioPlayer(sampleOne!)
         playerTwo   = AKAudioPlayer(sampleTwo!)
-        playerThree = AKAudioPlayer(samplerThree!)
+        playerThree = AKAudioPlayer(sampleThree!)
         
         //Set each track to loop
         playerOne.looping   = true
@@ -42,7 +42,7 @@ public class AudioSampler {
     }
     
     
-    public func playSampleOne() {
+    public func stopOrPlaySampleOne() {
         /* Here, we check if our audio player is playing. We also check whether
             or not our player's playhead (where in at in the audio file the 
             player is currently at) is less than the total length of the audio 
@@ -60,7 +60,7 @@ public class AudioSampler {
         print(playerOne.playhead)
     }
     
-    public func playSampleTwo() {
+    public func stopOrPlaySampleTwo() {
         if playerTwo.isPlaying && playerTwo.playhead < playerTwo.duration {
             playerTwo.stop()
         } else {
@@ -68,7 +68,7 @@ public class AudioSampler {
         }
     }
     
-    public func playSampleThree() {
+    public func stopOrPlaySampleThree() {
         if playerThree.isPlaying && playerThree.playhead < playerThree.duration {
             playerThree.stop()
         } else {

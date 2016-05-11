@@ -21,21 +21,21 @@
                                 <rect key="frame" x="258" y="151" width="84" height="30"/>
                                 <state key="normal" title="Sample Two"/>
                                 <connections>
-                                    <action selector="playSampleTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q5x-gI-1kn"/>
+                                    <action selector="toggleSampleTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Vl-eL-B3b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5E0-Pl-ujX">
                                 <rect key="frame" x="258" y="77" width="84" height="30"/>
                                 <state key="normal" title="Sample One"/>
                                 <connections>
-                                    <action selector="playSampleOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UzO-wY-W0e"/>
+                                    <action selector="toggleSampleOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J6g-lU-3aW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hz4-xe-fyX">
                                 <rect key="frame" x="253" y="222" width="95" height="30"/>
                                 <state key="normal" title="Sample Three"/>
                                 <connections>
-                                    <action selector="playSampleThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w0j-Dy-9Gu"/>
+                                    <action selector="toggleSampleThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9f-oj-g6k"/>
                                 </connections>
                             </button>
                         </subviews>
