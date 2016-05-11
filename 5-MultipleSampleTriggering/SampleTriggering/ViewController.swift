@@ -10,13 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var sampleOneLoopControl: UISegmentedControl!
-    @IBOutlet var sampleTwoLoopControl: UISegmentedControl!
-    @IBOutlet var sampleThreeLoopControl: UISegmentedControl!
-    
-    
     var audioSampler: AudioSampler!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,30 +36,6 @@ class ViewController: UIViewController {
     
     @IBAction func playSampleThree(sender: AnyObject) {
         audioSampler.playSampleThree()
-    }
-    
-    @IBAction func sampleOneLoopValueChanged(sender: AnyObject) {
-        if sampleOneLoopControl.selectedSegmentIndex == 0 {
-            audioSampler.setSampleOneLoopValue(true)
-        } else {
-            audioSampler.setSampleOneLoopValue(false)
-        }
-    }
-    
-    @IBAction func sampleTwoLoopValueChanged(sender: AnyObject) {
-        if sampleTwoLoopControl.selectedSegmentIndex == 0 {
-            audioSampler.setSampleTwoLoopValue(true)
-        } else {
-            audioSampler.setSampleTwoLoopValue(false)
-        }
-    }
-    
-    @IBAction func sampleThreeLoopValueChanged(sender: AnyObject) {
-        if sampleThreeLoopControl.selectedSegmentIndex == 0 {
-            audioSampler.setSampleThreeLoopValue(true)
-        } else {
-            audioSampler.setSampleThreeLoopValue(false)
-        }
     }
 
 }
