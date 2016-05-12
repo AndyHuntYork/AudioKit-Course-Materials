@@ -29,9 +29,9 @@ public class AudioSampler {
         playerThree = AKAudioPlayer(sampleThree!)
         
         //Set each track to loop
-        playerOne.looping   = true
-        playerTwo.looping   = true
-        playerThree.looping = true
+//        playerOne.looping   = true
+//        playerTwo.looping   = true
+//        playerThree.looping = true
         
         //Create a mixer that uses our audio loops as inputs
         let mixer = AKMixer(playerOne, playerTwo, playerThree)
@@ -75,29 +75,4 @@ public class AudioSampler {
             playerThree.play()
         }
     }
-    
-    public func setSampleOneLoopValue(shouldLoop: Bool){
-        if shouldLoop == true {
-            playerOne.looping = true
-        } else {
-            playerOne.looping = false
-        }
-    }
-
-    public func setSampleTwoLoopValue(shouldLoop: Bool){
-        if shouldLoop == true {
-            playerTwo.looping = true
-        } else {
-            playerTwo.looping = false
-        }
-    }
-    
-    public func setSampleThreeLoopValue(shouldLoop: Bool){
-        if shouldLoop == true {
-            playerThree.looping = true
-        } else {
-            playerThree.looping = false
-        }
-    }
-    
 }

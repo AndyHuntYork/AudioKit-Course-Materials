@@ -38,21 +38,99 @@
                                     <action selector="toggleSampleThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9f-oj-g6k"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="b5A-oJ-3ND">
+                                <rect key="frame" x="253" y="442" width="121" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="TN1-My-2Ti"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Loop"/>
+                                    <segment title="Don't Loop"/>
+                                </segments>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="TN1-My-2Ti"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="TN1-My-2Ti"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="playerThreeLoopingValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8yl-jf-xdf"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="ubv-om-RPh">
+                                <rect key="frame" x="258" y="387" width="121" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="Y2N-Vk-Db4"/>
+                                    <constraint firstAttribute="width" constant="121" id="imf-7f-mBo"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Loop"/>
+                                    <segment title="Don't Loop"/>
+                                </segments>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="imf-7f-mBo"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="imf-7f-mBo"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="playerTwoLoopingValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="jmZ-Cd-Zm8"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="K5r-PF-YXU">
+                                <rect key="frame" x="253" y="309" width="121" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="XaK-M0-p2Y"/>
+                                    <constraint firstAttribute="width" constant="121" id="ubf-CF-GnQ"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Loop"/>
+                                    <segment title="Don't Loop"/>
+                                </segments>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ubf-CF-GnQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ubf-CF-GnQ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="playerOneLoopingValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Yj3-pY-gzP"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ubv-om-RPh" firstAttribute="leading" secondItem="K5r-PF-YXU" secondAttribute="leading" constant="5" id="0JL-6d-Ey7"/>
                             <constraint firstItem="2TC-Y9-OZN" firstAttribute="top" secondItem="5E0-Pl-ujX" secondAttribute="bottom" constant="44" id="0ap-BS-pIU"/>
                             <constraint firstItem="2TC-Y9-OZN" firstAttribute="top" secondItem="5E0-Pl-ujX" secondAttribute="bottom" constant="44" id="FtR-lY-YWc"/>
                             <constraint firstItem="5E0-Pl-ujX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="JX3-a4-xCP"/>
                             <constraint firstItem="5E0-Pl-ujX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O3l-tn-fXh"/>
                             <constraint firstItem="5E0-Pl-ujX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OqX-Ml-6N9"/>
                             <constraint firstItem="2TC-Y9-OZN" firstAttribute="centerX" secondItem="Hz4-xe-fyX" secondAttribute="centerX" id="Pc8-0a-1Ck"/>
+                            <constraint firstItem="ubv-om-RPh" firstAttribute="leading" secondItem="b5A-oJ-3ND" secondAttribute="leading" constant="5" id="PpA-K0-AmX"/>
+                            <constraint firstItem="K5r-PF-YXU" firstAttribute="trailing" secondItem="b5A-oJ-3ND" secondAttribute="trailing" id="QTE-bb-La7"/>
                             <constraint firstItem="5E0-Pl-ujX" firstAttribute="leading" secondItem="2TC-Y9-OZN" secondAttribute="leading" id="aNl-gl-PBR"/>
+                            <constraint firstItem="ubv-om-RPh" firstAttribute="top" secondItem="b5A-oJ-3ND" secondAttribute="bottom" constant="-83" id="eJp-lP-CAz"/>
                             <constraint firstItem="Hz4-xe-fyX" firstAttribute="top" secondItem="2TC-Y9-OZN" secondAttribute="bottom" constant="41" id="gHh-kW-hm4"/>
                             <constraint firstItem="5E0-Pl-ujX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="mjz-Cj-R4Q"/>
                             <constraint firstItem="Hz4-xe-fyX" firstAttribute="top" secondItem="2TC-Y9-OZN" secondAttribute="bottom" constant="41" id="nHo-dM-py1"/>
+                            <constraint firstItem="K5r-PF-YXU" firstAttribute="top" secondItem="Hz4-xe-fyX" secondAttribute="bottom" constant="57" id="r2B-5N-kpW"/>
                             <constraint firstItem="5E0-Pl-ujX" firstAttribute="leading" secondItem="2TC-Y9-OZN" secondAttribute="leading" id="suz-H8-emP"/>
+                            <constraint firstItem="K5r-PF-YXU" firstAttribute="leading" secondItem="Hz4-xe-fyX" secondAttribute="leading" id="tL1-gd-Aoh"/>
                             <constraint firstItem="2TC-Y9-OZN" firstAttribute="centerX" secondItem="Hz4-xe-fyX" secondAttribute="centerX" id="vdu-wm-KvF"/>
+                            <constraint firstItem="K5r-PF-YXU" firstAttribute="top" secondItem="ubv-om-RPh" secondAttribute="bottom" constant="-106" id="zaw-Wl-Bfn"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -81,6 +159,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="playerOneLoopControl" destination="K5r-PF-YXU" id="XNt-gw-LRT"/>
+                        <outlet property="playerThreeLoopControl" destination="b5A-oJ-3ND" id="4h6-J7-U9G"/>
+                        <outlet property="playerTwoLoopControl" destination="ubv-om-RPh" id="1Wg-aJ-3QK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
