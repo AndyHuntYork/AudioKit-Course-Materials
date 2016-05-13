@@ -78,35 +78,35 @@
                                     <action selector="toggleSampleThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9f-oj-g6k"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="ubv-om-RPh">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ubv-om-RPh">
                                 <rect key="frame" x="284" y="119" width="165" height="29"/>
                                 <segments>
-                                    <segment title="Loop"/>
                                     <segment title="Don't Loop"/>
+                                    <segment title="Loop"/>
                                 </segments>
                                 <connections>
                                     <action selector="playerTwoLoopingValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="jmZ-Cd-Zm8"/>
                                 </connections>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="b5A-oJ-3ND">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b5A-oJ-3ND">
                                 <rect key="frame" x="284" y="181" width="165" height="29"/>
                                 <segments>
-                                    <segment title="Loop"/>
                                     <segment title="Don't Loop"/>
+                                    <segment title="Loop"/>
                                 </segments>
                                 <connections>
                                     <action selector="playerThreeLoopingValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8yl-jf-xdf"/>
                                 </connections>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="K5r-PF-YXU">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="K5r-PF-YXU">
                                 <rect key="frame" x="284" y="55" width="165" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="6EI-mX-FG9"/>
                                     <constraint firstAttribute="width" constant="165" id="aYi-cG-Baw"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Loop"/>
                                     <segment title="Don't Loop"/>
+                                    <segment title="Loop"/>
                                 </segments>
                                 <variation key="default">
                                     <mask key="constraints">

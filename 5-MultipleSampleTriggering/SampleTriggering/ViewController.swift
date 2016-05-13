@@ -11,9 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var playerOneLoopControl: UISegmentedControl!
-    
     @IBOutlet var playerTwoLoopControl: UISegmentedControl!
-    
     @IBOutlet var playerThreeLoopControl: UISegmentedControl!
     
     var audioSampler: AudioSampler!
@@ -31,7 +29,7 @@ class ViewController: UIViewController {
     }
     
     
-
+    //On/Off controls
     @IBAction func toggleSampleOne(sender: AnyObject) {
         audioSampler.stopOrPlaySampleOne()
     }
@@ -44,34 +42,31 @@ class ViewController: UIViewController {
         audioSampler.stopOrPlaySampleThree()
     }
     
-    
-    
+    //Looping toggle controls
     @IBAction func playerOneLoopingValueChanged(sender: AnyObject) {
         audioSampler.playerOne.stop()
         if playerOneLoopControl.selectedSegmentIndex == 0 {
-            audioSampler.playerOne.looping = true
-        } else {
             audioSampler.playerOne.looping = false
+        } else {
+            audioSampler.playerOne.looping = true
         }
     }
-    
 
     @IBAction func playerTwoLoopingValueChanged(sender: AnyObject) {
         audioSampler.playerTwo.stop()
         if playerOneLoopControl.selectedSegmentIndex == 0 {
-            audioSampler.playerTwo.looping = true
-        } else {
             audioSampler.playerTwo.looping = false
+        } else {
+            audioSampler.playerTwo.looping = true
         }
     }
     
     @IBAction func playerThreeLoopingValueChanged(sender: AnyObject) {
         audioSampler.playerThree.stop()
         if playerThreeLoopControl.selectedSegmentIndex == 0 {
-            audioSampler.playerThree.looping = true
-        } else {
             audioSampler.playerThree.looping = false
+        } else {
+            audioSampler.playerThree.looping = true
         }
     }
 }
-

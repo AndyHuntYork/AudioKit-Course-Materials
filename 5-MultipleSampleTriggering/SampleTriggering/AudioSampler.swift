@@ -27,12 +27,7 @@ public class AudioSampler {
         playerOne   = AKAudioPlayer(sampleOne!)
         playerTwo   = AKAudioPlayer(sampleTwo!)
         playerThree = AKAudioPlayer(sampleThree!)
-        
-        //Set each track to loop
-//        playerOne.looping   = true
-//        playerTwo.looping   = true
-//        playerThree.looping = true
-        
+                
         //Create a mixer that uses our audio loops as inputs
         let mixer = AKMixer(playerOne, playerTwo, playerThree)
         
