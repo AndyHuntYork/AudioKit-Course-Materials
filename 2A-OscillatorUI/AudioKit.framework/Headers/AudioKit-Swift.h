@@ -243,6 +243,11 @@ SWIFT_CLASS("_TtC8AudioKit13AKAudioPlayer")
 /// Current playback time (in seconds)
 @property (nonatomic, readonly) double currentTime;
 
+/// Play the file back from a certain time (non-looping)
+///
+/// \param time Time into the file at which to start playing back
+- (void)playFrom:(double)time;
+
 /// Replace the current audio file with a new audio file
 - (void)replaceFile:(NSString * _Nonnull)newFile;
 @end
@@ -2016,7 +2021,7 @@ SWIFT_CLASS("_TtC8AudioKit16AKMIDIInstrument")
 /// \param velocity MIDI velocity
 ///
 /// \param channel MIDI channel
-- (void)midiNoteOn:(NSInteger)note velocity:(NSInteger)velocity channel:(NSInteger)channel;
+- (void)receivedMIDINoteOn:(NSInteger)note velocity:(NSInteger)velocity channel:(NSInteger)channel;
 
 /// Start a note
 - (void)startNote:(NSInteger)note withVelocity:(NSInteger)velocity onChannel:(NSInteger)channel;
@@ -2054,18 +2059,17 @@ SWIFT_CLASS("_TtC8AudioKit9AKSampler")
 /// Load a SoundFont SF2 sample data file
 ///
 /// \param file Name of the SoundFont SF2 file without the .sf2 extension
-- (void)loadSoundfont:(NSString * _Nonnull)file;
+- (void)loadSoundFont:(NSString * _Nonnull)file;
 
 /// Load a file path
 ///
 /// \param file Name of the file with the extension
 - (void)loadPath:(NSString * _Nonnull)filePath;
-+ (NSMutableDictionary * _Nonnull)generateTemplateDictionary:(NSInteger)rootNote filename:(NSString * _Nonnull)filename startNote:(NSInteger)startNote endNote:(NSInteger)endNote;
 
 /// Output Amplitude. Range: -90.0 -> +12 db Default: 0 db
 @property (nonatomic) double amplitude;
 
-/// Normalised Output Volume. Range:   0 - 1 Default: 1
+/// Normalized Output Volume. Range:   0 - 1 Default: 1
 @property (nonatomic) double volume;
 
 /// Play a MIDI Note
@@ -2083,6 +2087,7 @@ SWIFT_CLASS("_TtC8AudioKit9AKSampler")
 ///
 /// \param channel MIDI Channnel
 - (void)stopNote:(NSInteger)note channel:(NSInteger)channel;
++ (NSMutableDictionary * _Nonnull)generateTemplateDictionary:(NSInteger)rootNote filename:(NSString * _Nonnull)filename startNote:(NSInteger)startNote endNote:(NSInteger)endNote;
 @end
 
 
@@ -2099,9 +2104,9 @@ SWIFT_CLASS("_TtC8AudioKit13AKMIDISampler")
 /// Name of the instrument
 @property (nonatomic, copy) NSString * _Nonnull name;
 
-/// Enable MIDI input from a given MIDI client This is not in the init function because it must be called AFTER you start audiokit
+/// Enable MIDI input from a given MIDI client This is not in the init function because it must be called AFTER you start AudioKit
 ///
-/// \param midiClient A refernce to the midi client
+/// \param midiClient A refernce to the MIDI client
 ///
 /// \param name Name to connect with
 - (void)enableMIDI:(MIDIClientRef)midiClient name:(NSString * _Nonnull)name;
@@ -2113,7 +2118,7 @@ SWIFT_CLASS("_TtC8AudioKit13AKMIDISampler")
 /// \param velocity MIDI velocity
 ///
 /// \param channel MIDI channel
-- (void)midiNoteOn:(NSInteger)note velocity:(NSInteger)velocity channel:(NSInteger)channel;
+- (void)receivedMIDINoteOn:(NSInteger)note velocity:(NSInteger)velocity channel:(NSInteger)channel;
 
 /// Handle MIDI CC that come in externally
 ///
@@ -2342,6 +2347,8 @@ SWIFT_CLASS("_TtC8AudioKit12AKMoogLadder")
 
 /// This is an oscillator with linear interpolation that is capable of morphing between an arbitrary number of wavetables.
 ///
+/// \param waveformArray An array of exactly four waveforms
+///
 /// \param frequency Frequency (in Hz)
 ///
 /// \param amplitude Amplitude (typically a value between 0 and 1).
@@ -2351,8 +2358,6 @@ SWIFT_CLASS("_TtC8AudioKit12AKMoogLadder")
 /// \param detuningOffset Frequency offset in Hz.
 ///
 /// \param detuningMultiplier Frequency detuning multiplier
-///
-/// \param waveformCount Number of waveforms.
 ///
 /// \param phase Initial phase of waveform, expects a value 0-1
 SWIFT_CLASS("_TtC8AudioKit20AKMorphingOscillator")
@@ -2494,6 +2499,18 @@ SWIFT_CLASS("_TtC8AudioKit16AKNoiseGenerator")
 ///
 /// \param note MIDI Note Number
 - (void)stopVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note;
+@end
+
+
+SWIFT_CLASS("_TtC8AudioKit15AKNotifications")
+@interface AKNotifications : NSObject
+
+/// After the audio route is changed, (headphones plugged in, for example) AudioKit restarts, and engineRestartAfterRouteChange is sent.
+///
+/// The userInfo dictionary of this notification contains the AVAudioSessionRouteChangeReasonKey
+/// and AVAudioSessionSilenceSecondaryAudioHintTypeKey keys, which provide information about the route change.
++ (NSString * _Nonnull)engineRestartedAfterRouteChange;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -3347,6 +3364,10 @@ SWIFT_CLASS("_TtC8AudioKit10AKSettings")
 /// Global default rampTime value
 + (double)rampTime;
 + (void)setRampTime:(double)value;
+
+/// Allows AudioKit to send Notifications
++ (BOOL)notificationsEnabled;
++ (void)setNotificationsEnabled:(BOOL)value;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -3833,6 +3854,9 @@ SWIFT_CLASS("_TtC8AudioKit11AKVariSpeed")
 /// \param maximumDelayTime The maximum delay time, in seconds.
 SWIFT_CLASS("_TtC8AudioKit15AKVariableDelay")
 @interface AKVariableDelay : AKNode
+
+/// Ramp Time represents the speed at which parameters are allowed to change
+@property (nonatomic) double rampTime;
 
 /// Delay time (in seconds) that can be changed during performance. This value must not exceed the maximum delay time.
 @property (nonatomic) double time;

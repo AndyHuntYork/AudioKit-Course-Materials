@@ -2,7 +2,7 @@
 //  OscillatorUITests.swift
 //  OscillatorUITests
 //
-//  Created by Nicholas Arner on 4/28/16.
+//  Created by Nicholas Arner on 5/8/16.
 //  Copyright © 2016 Nicholas Arner. All rights reserved.
 //
 

@@ -7,42 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E41FB6811CD2EC4C005CAF9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB6801CD2EC4C005CAF9E /* AppDelegate.swift */; };
-		E41FB6831CD2EC4C005CAF9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB6821CD2EC4C005CAF9E /* ViewController.swift */; };
-		E41FB6861CD2EC4C005CAF9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41FB6841CD2EC4C005CAF9E /* Main.storyboard */; };
-		E41FB6881CD2EC4C005CAF9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41FB6871CD2EC4C005CAF9E /* Assets.xcassets */; };
-		E41FB68B1CD2EC4C005CAF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41FB6891CD2EC4C005CAF9E /* LaunchScreen.storyboard */; };
-		E41FB6961CD2EC4C005CAF9E /* OscillatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB6951CD2EC4C005CAF9E /* OscillatorUITests.swift */; };
-		E41FB6A11CD2EC4C005CAF9E /* OscillatorUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB6A01CD2EC4C005CAF9E /* OscillatorUIUITests.swift */; };
-		E41FB6B01CD2EC5F005CAF9E /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41FB6AE1CD2EC5A005CAF9E /* AudioKit.framework */; };
-		E41FB6B11CD2EC5F005CAF9E /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E41FB6AE1CD2EC5A005CAF9E /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E44009C31CDFAB2900EB0458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44009C21CDFAB2900EB0458 /* AppDelegate.swift */; };
+		E44009C51CDFAB2900EB0458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44009C41CDFAB2900EB0458 /* ViewController.swift */; };
+		E44009C81CDFAB2900EB0458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44009C61CDFAB2900EB0458 /* Main.storyboard */; };
+		E44009CA1CDFAB2900EB0458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44009C91CDFAB2900EB0458 /* Assets.xcassets */; };
+		E44009CD1CDFAB2900EB0458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44009CB1CDFAB2900EB0458 /* LaunchScreen.storyboard */; };
+		E44009D81CDFAB2900EB0458 /* OscillatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44009D71CDFAB2900EB0458 /* OscillatorUITests.swift */; };
+		E44009E31CDFAB2900EB0458 /* OscillatorUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44009E21CDFAB2900EB0458 /* OscillatorUIUITests.swift */; };
+		E44009F21CDFAB7400EB0458 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44009F01CDFAB6F00EB0458 /* AudioKit.framework */; };
+		E44009F31CDFAB7400EB0458 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E44009F01CDFAB6F00EB0458 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E41FB6921CD2EC4C005CAF9E /* PBXContainerItemProxy */ = {
+		E44009D41CDFAB2900EB0458 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E41FB6751CD2EC4C005CAF9E /* Project object */;
+			containerPortal = E44009B71CDFAB2800EB0458 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E41FB67C1CD2EC4C005CAF9E;
+			remoteGlobalIDString = E44009BE1CDFAB2900EB0458;
 			remoteInfo = OscillatorUI;
 		};
-		E41FB69D1CD2EC4C005CAF9E /* PBXContainerItemProxy */ = {
+		E44009DF1CDFAB2900EB0458 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E41FB6751CD2EC4C005CAF9E /* Project object */;
+			containerPortal = E44009B71CDFAB2800EB0458 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E41FB67C1CD2EC4C005CAF9E;
+			remoteGlobalIDString = E44009BE1CDFAB2900EB0458;
 			remoteInfo = OscillatorUI;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E41FB6B21CD2EC5F005CAF9E /* Embed Frameworks */ = {
+		E44009F41CDFAB7400EB0458 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E41FB6B11CD2EC5F005CAF9E /* AudioKit.framework in Embed Frameworks */,
+				E44009F31CDFAB7400EB0458 /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,39 +50,39 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E41FB67D1CD2EC4C005CAF9E /* OscillatorUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OscillatorUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E41FB6801CD2EC4C005CAF9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E41FB6821CD2EC4C005CAF9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E41FB6851CD2EC4C005CAF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E41FB6871CD2EC4C005CAF9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E41FB68A1CD2EC4C005CAF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E41FB68C1CD2EC4C005CAF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E41FB6911CD2EC4C005CAF9E /* OscillatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OscillatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E41FB6951CD2EC4C005CAF9E /* OscillatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OscillatorUITests.swift; sourceTree = "<group>"; };
-		E41FB6971CD2EC4C005CAF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E41FB69C1CD2EC4C005CAF9E /* OscillatorUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OscillatorUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E41FB6A01CD2EC4C005CAF9E /* OscillatorUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OscillatorUIUITests.swift; sourceTree = "<group>"; };
-		E41FB6A21CD2EC4C005CAF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E41FB6AE1CD2EC5A005CAF9E /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		E44009BF1CDFAB2900EB0458 /* OscillatorUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OscillatorUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44009C21CDFAB2900EB0458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E44009C41CDFAB2900EB0458 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E44009C71CDFAB2900EB0458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E44009C91CDFAB2900EB0458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E44009CC1CDFAB2900EB0458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E44009CE1CDFAB2900EB0458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E44009D31CDFAB2900EB0458 /* OscillatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OscillatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44009D71CDFAB2900EB0458 /* OscillatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OscillatorUITests.swift; sourceTree = "<group>"; };
+		E44009D91CDFAB2900EB0458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E44009DE1CDFAB2900EB0458 /* OscillatorUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OscillatorUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44009E21CDFAB2900EB0458 /* OscillatorUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OscillatorUIUITests.swift; sourceTree = "<group>"; };
+		E44009E41CDFAB2900EB0458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E44009F01CDFAB6F00EB0458 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E41FB67A1CD2EC4C005CAF9E /* Frameworks */ = {
+		E44009BC1CDFAB2900EB0458 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41FB6B01CD2EC5F005CAF9E /* AudioKit.framework in Frameworks */,
+				E44009F21CDFAB7400EB0458 /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E41FB68E1CD2EC4C005CAF9E /* Frameworks */ = {
+		E44009D01CDFAB2900EB0458 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E41FB6991CD2EC4C005CAF9E /* Frameworks */ = {
+		E44009DB1CDFAB2900EB0458 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,54 +92,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E41FB6741CD2EC4C005CAF9E = {
+		E44009B61CDFAB2800EB0458 = {
 			isa = PBXGroup;
 			children = (
-				E41FB6AE1CD2EC5A005CAF9E /* AudioKit.framework */,
-				E41FB67F1CD2EC4C005CAF9E /* OscillatorUI */,
-				E41FB6941CD2EC4C005CAF9E /* OscillatorUITests */,
-				E41FB69F1CD2EC4C005CAF9E /* OscillatorUIUITests */,
-				E41FB67E1CD2EC4C005CAF9E /* Products */,
+				E44009C11CDFAB2900EB0458 /* OscillatorUI */,
+				E44009D61CDFAB2900EB0458 /* OscillatorUITests */,
+				E44009E11CDFAB2900EB0458 /* OscillatorUIUITests */,
+				E44009C01CDFAB2900EB0458 /* Products */,
+				E44009F01CDFAB6F00EB0458 /* AudioKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
-		E41FB67E1CD2EC4C005CAF9E /* Products */ = {
+		E44009C01CDFAB2900EB0458 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E41FB67D1CD2EC4C005CAF9E /* OscillatorUI.app */,
-				E41FB6911CD2EC4C005CAF9E /* OscillatorUITests.xctest */,
-				E41FB69C1CD2EC4C005CAF9E /* OscillatorUIUITests.xctest */,
+				E44009BF1CDFAB2900EB0458 /* OscillatorUI.app */,
+				E44009D31CDFAB2900EB0458 /* OscillatorUITests.xctest */,
+				E44009DE1CDFAB2900EB0458 /* OscillatorUIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E41FB67F1CD2EC4C005CAF9E /* OscillatorUI */ = {
+		E44009C11CDFAB2900EB0458 /* OscillatorUI */ = {
 			isa = PBXGroup;
 			children = (
-				E41FB6801CD2EC4C005CAF9E /* AppDelegate.swift */,
-				E41FB6821CD2EC4C005CAF9E /* ViewController.swift */,
-				E41FB6841CD2EC4C005CAF9E /* Main.storyboard */,
-				E41FB6871CD2EC4C005CAF9E /* Assets.xcassets */,
-				E41FB6891CD2EC4C005CAF9E /* LaunchScreen.storyboard */,
-				E41FB68C1CD2EC4C005CAF9E /* Info.plist */,
+				E44009C21CDFAB2900EB0458 /* AppDelegate.swift */,
+				E44009C41CDFAB2900EB0458 /* ViewController.swift */,
+				E44009C61CDFAB2900EB0458 /* Main.storyboard */,
+				E44009C91CDFAB2900EB0458 /* Assets.xcassets */,
+				E44009CB1CDFAB2900EB0458 /* LaunchScreen.storyboard */,
+				E44009CE1CDFAB2900EB0458 /* Info.plist */,
 			);
 			path = OscillatorUI;
 			sourceTree = "<group>";
 		};
-		E41FB6941CD2EC4C005CAF9E /* OscillatorUITests */ = {
+		E44009D61CDFAB2900EB0458 /* OscillatorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E41FB6951CD2EC4C005CAF9E /* OscillatorUITests.swift */,
-				E41FB6971CD2EC4C005CAF9E /* Info.plist */,
+				E44009D71CDFAB2900EB0458 /* OscillatorUITests.swift */,
+				E44009D91CDFAB2900EB0458 /* Info.plist */,
 			);
 			path = OscillatorUITests;
 			sourceTree = "<group>";
 		};
-		E41FB69F1CD2EC4C005CAF9E /* OscillatorUIUITests */ = {
+		E44009E11CDFAB2900EB0458 /* OscillatorUIUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E41FB6A01CD2EC4C005CAF9E /* OscillatorUIUITests.swift */,
-				E41FB6A21CD2EC4C005CAF9E /* Info.plist */,
+				E44009E21CDFAB2900EB0458 /* OscillatorUIUITests.swift */,
+				E44009E41CDFAB2900EB0458 /* Info.plist */,
 			);
 			path = OscillatorUIUITests;
 			sourceTree = "<group>";
@@ -147,14 +147,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E41FB67C1CD2EC4C005CAF9E /* OscillatorUI */ = {
+		E44009BE1CDFAB2900EB0458 /* OscillatorUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E41FB6A51CD2EC4C005CAF9E /* Build configuration list for PBXNativeTarget "OscillatorUI" */;
+			buildConfigurationList = E44009E71CDFAB2900EB0458 /* Build configuration list for PBXNativeTarget "OscillatorUI" */;
 			buildPhases = (
-				E41FB6791CD2EC4C005CAF9E /* Sources */,
-				E41FB67A1CD2EC4C005CAF9E /* Frameworks */,
-				E41FB67B1CD2EC4C005CAF9E /* Resources */,
-				E41FB6B21CD2EC5F005CAF9E /* Embed Frameworks */,
+				E44009BB1CDFAB2900EB0458 /* Sources */,
+				E44009BC1CDFAB2900EB0458 /* Frameworks */,
+				E44009BD1CDFAB2900EB0458 /* Resources */,
+				E44009F41CDFAB7400EB0458 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,69 +162,69 @@
 			);
 			name = OscillatorUI;
 			productName = OscillatorUI;
-			productReference = E41FB67D1CD2EC4C005CAF9E /* OscillatorUI.app */;
+			productReference = E44009BF1CDFAB2900EB0458 /* OscillatorUI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E41FB6901CD2EC4C005CAF9E /* OscillatorUITests */ = {
+		E44009D21CDFAB2900EB0458 /* OscillatorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E41FB6A81CD2EC4C005CAF9E /* Build configuration list for PBXNativeTarget "OscillatorUITests" */;
+			buildConfigurationList = E44009EA1CDFAB2900EB0458 /* Build configuration list for PBXNativeTarget "OscillatorUITests" */;
 			buildPhases = (
-				E41FB68D1CD2EC4C005CAF9E /* Sources */,
-				E41FB68E1CD2EC4C005CAF9E /* Frameworks */,
-				E41FB68F1CD2EC4C005CAF9E /* Resources */,
+				E44009CF1CDFAB2900EB0458 /* Sources */,
+				E44009D01CDFAB2900EB0458 /* Frameworks */,
+				E44009D11CDFAB2900EB0458 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E41FB6931CD2EC4C005CAF9E /* PBXTargetDependency */,
+				E44009D51CDFAB2900EB0458 /* PBXTargetDependency */,
 			);
 			name = OscillatorUITests;
 			productName = OscillatorUITests;
-			productReference = E41FB6911CD2EC4C005CAF9E /* OscillatorUITests.xctest */;
+			productReference = E44009D31CDFAB2900EB0458 /* OscillatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E41FB69B1CD2EC4C005CAF9E /* OscillatorUIUITests */ = {
+		E44009DD1CDFAB2900EB0458 /* OscillatorUIUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E41FB6AB1CD2EC4C005CAF9E /* Build configuration list for PBXNativeTarget "OscillatorUIUITests" */;
+			buildConfigurationList = E44009ED1CDFAB2900EB0458 /* Build configuration list for PBXNativeTarget "OscillatorUIUITests" */;
 			buildPhases = (
-				E41FB6981CD2EC4C005CAF9E /* Sources */,
-				E41FB6991CD2EC4C005CAF9E /* Frameworks */,
-				E41FB69A1CD2EC4C005CAF9E /* Resources */,
+				E44009DA1CDFAB2900EB0458 /* Sources */,
+				E44009DB1CDFAB2900EB0458 /* Frameworks */,
+				E44009DC1CDFAB2900EB0458 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E41FB69E1CD2EC4C005CAF9E /* PBXTargetDependency */,
+				E44009E01CDFAB2900EB0458 /* PBXTargetDependency */,
 			);
 			name = OscillatorUIUITests;
 			productName = OscillatorUIUITests;
-			productReference = E41FB69C1CD2EC4C005CAF9E /* OscillatorUIUITests.xctest */;
+			productReference = E44009DE1CDFAB2900EB0458 /* OscillatorUIUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E41FB6751CD2EC4C005CAF9E /* Project object */ = {
+		E44009B71CDFAB2800EB0458 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Nicholas Arner";
 				TargetAttributes = {
-					E41FB67C1CD2EC4C005CAF9E = {
+					E44009BE1CDFAB2900EB0458 = {
 						CreatedOnToolsVersion = 7.3;
 					};
-					E41FB6901CD2EC4C005CAF9E = {
+					E44009D21CDFAB2900EB0458 = {
 						CreatedOnToolsVersion = 7.3;
-						TestTargetID = E41FB67C1CD2EC4C005CAF9E;
+						TestTargetID = E44009BE1CDFAB2900EB0458;
 					};
-					E41FB69B1CD2EC4C005CAF9E = {
+					E44009DD1CDFAB2900EB0458 = {
 						CreatedOnToolsVersion = 7.3;
-						TestTargetID = E41FB67C1CD2EC4C005CAF9E;
+						TestTargetID = E44009BE1CDFAB2900EB0458;
 					};
 				};
 			};
-			buildConfigurationList = E41FB6781CD2EC4C005CAF9E /* Build configuration list for PBXProject "OscillatorUI" */;
+			buildConfigurationList = E44009BA1CDFAB2900EB0458 /* Build configuration list for PBXProject "OscillatorUI" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -232,37 +232,37 @@
 				en,
 				Base,
 			);
-			mainGroup = E41FB6741CD2EC4C005CAF9E;
-			productRefGroup = E41FB67E1CD2EC4C005CAF9E /* Products */;
+			mainGroup = E44009B61CDFAB2800EB0458;
+			productRefGroup = E44009C01CDFAB2900EB0458 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E41FB67C1CD2EC4C005CAF9E /* OscillatorUI */,
-				E41FB6901CD2EC4C005CAF9E /* OscillatorUITests */,
-				E41FB69B1CD2EC4C005CAF9E /* OscillatorUIUITests */,
+				E44009BE1CDFAB2900EB0458 /* OscillatorUI */,
+				E44009D21CDFAB2900EB0458 /* OscillatorUITests */,
+				E44009DD1CDFAB2900EB0458 /* OscillatorUIUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E41FB67B1CD2EC4C005CAF9E /* Resources */ = {
+		E44009BD1CDFAB2900EB0458 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41FB68B1CD2EC4C005CAF9E /* LaunchScreen.storyboard in Resources */,
-				E41FB6881CD2EC4C005CAF9E /* Assets.xcassets in Resources */,
-				E41FB6861CD2EC4C005CAF9E /* Main.storyboard in Resources */,
+				E44009CD1CDFAB2900EB0458 /* LaunchScreen.storyboard in Resources */,
+				E44009CA1CDFAB2900EB0458 /* Assets.xcassets in Resources */,
+				E44009C81CDFAB2900EB0458 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E41FB68F1CD2EC4C005CAF9E /* Resources */ = {
+		E44009D11CDFAB2900EB0458 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E41FB69A1CD2EC4C005CAF9E /* Resources */ = {
+		E44009DC1CDFAB2900EB0458 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,59 +272,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E41FB6791CD2EC4C005CAF9E /* Sources */ = {
+		E44009BB1CDFAB2900EB0458 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41FB6831CD2EC4C005CAF9E /* ViewController.swift in Sources */,
-				E41FB6811CD2EC4C005CAF9E /* AppDelegate.swift in Sources */,
+				E44009C51CDFAB2900EB0458 /* ViewController.swift in Sources */,
+				E44009C31CDFAB2900EB0458 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E41FB68D1CD2EC4C005CAF9E /* Sources */ = {
+		E44009CF1CDFAB2900EB0458 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41FB6961CD2EC4C005CAF9E /* OscillatorUITests.swift in Sources */,
+				E44009D81CDFAB2900EB0458 /* OscillatorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E41FB6981CD2EC4C005CAF9E /* Sources */ = {
+		E44009DA1CDFAB2900EB0458 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41FB6A11CD2EC4C005CAF9E /* OscillatorUIUITests.swift in Sources */,
+				E44009E31CDFAB2900EB0458 /* OscillatorUIUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E41FB6931CD2EC4C005CAF9E /* PBXTargetDependency */ = {
+		E44009D51CDFAB2900EB0458 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E41FB67C1CD2EC4C005CAF9E /* OscillatorUI */;
-			targetProxy = E41FB6921CD2EC4C005CAF9E /* PBXContainerItemProxy */;
+			target = E44009BE1CDFAB2900EB0458 /* OscillatorUI */;
+			targetProxy = E44009D41CDFAB2900EB0458 /* PBXContainerItemProxy */;
 		};
-		E41FB69E1CD2EC4C005CAF9E /* PBXTargetDependency */ = {
+		E44009E01CDFAB2900EB0458 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E41FB67C1CD2EC4C005CAF9E /* OscillatorUI */;
-			targetProxy = E41FB69D1CD2EC4C005CAF9E /* PBXContainerItemProxy */;
+			target = E44009BE1CDFAB2900EB0458 /* OscillatorUI */;
+			targetProxy = E44009DF1CDFAB2900EB0458 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E41FB6841CD2EC4C005CAF9E /* Main.storyboard */ = {
+		E44009C61CDFAB2900EB0458 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E41FB6851CD2EC4C005CAF9E /* Base */,
+				E44009C71CDFAB2900EB0458 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		E41FB6891CD2EC4C005CAF9E /* LaunchScreen.storyboard */ = {
+		E44009CB1CDFAB2900EB0458 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E41FB68A1CD2EC4C005CAF9E /* Base */,
+				E44009CC1CDFAB2900EB0458 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -332,7 +332,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E41FB6A31CD2EC4C005CAF9E /* Debug */ = {
+		E44009E51CDFAB2900EB0458 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -378,7 +378,7 @@
 			};
 			name = Debug;
 		};
-		E41FB6A41CD2EC4C005CAF9E /* Release */ = {
+		E44009E61CDFAB2900EB0458 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -417,7 +417,7 @@
 			};
 			name = Release;
 		};
-		E41FB6A61CD2EC4C005CAF9E /* Debug */ = {
+		E44009E81CDFAB2900EB0458 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -432,7 +432,7 @@
 			};
 			name = Debug;
 		};
-		E41FB6A71CD2EC4C005CAF9E /* Release */ = {
+		E44009E91CDFAB2900EB0458 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -447,7 +447,7 @@
 			};
 			name = Release;
 		};
-		E41FB6A91CD2EC4C005CAF9E /* Debug */ = {
+		E44009EB1CDFAB2900EB0458 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -459,7 +459,7 @@
 			};
 			name = Debug;
 		};
-		E41FB6AA1CD2EC4C005CAF9E /* Release */ = {
+		E44009EC1CDFAB2900EB0458 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,7 +471,7 @@
 			};
 			name = Release;
 		};
-		E41FB6AC1CD2EC4C005CAF9E /* Debug */ = {
+		E44009EE1CDFAB2900EB0458 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = OscillatorUIUITests/Info.plist;
@@ -482,7 +482,7 @@
 			};
 			name = Debug;
 		};
-		E41FB6AD1CD2EC4C005CAF9E /* Release */ = {
+		E44009EF1CDFAB2900EB0458 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = OscillatorUIUITests/Info.plist;
@@ -496,40 +496,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E41FB6781CD2EC4C005CAF9E /* Build configuration list for PBXProject "OscillatorUI" */ = {
+		E44009BA1CDFAB2900EB0458 /* Build configuration list for PBXProject "OscillatorUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E41FB6A31CD2EC4C005CAF9E /* Debug */,
-				E41FB6A41CD2EC4C005CAF9E /* Release */,
+				E44009E51CDFAB2900EB0458 /* Debug */,
+				E44009E61CDFAB2900EB0458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E41FB6A51CD2EC4C005CAF9E /* Build configuration list for PBXNativeTarget "OscillatorUI" */ = {
+		E44009E71CDFAB2900EB0458 /* Build configuration list for PBXNativeTarget "OscillatorUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E41FB6A61CD2EC4C005CAF9E /* Debug */,
-				E41FB6A71CD2EC4C005CAF9E /* Release */,
+				E44009E81CDFAB2900EB0458 /* Debug */,
+				E44009E91CDFAB2900EB0458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		E41FB6A81CD2EC4C005CAF9E /* Build configuration list for PBXNativeTarget "OscillatorUITests" */ = {
+		E44009EA1CDFAB2900EB0458 /* Build configuration list for PBXNativeTarget "OscillatorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E41FB6A91CD2EC4C005CAF9E /* Debug */,
-				E41FB6AA1CD2EC4C005CAF9E /* Release */,
+				E44009EB1CDFAB2900EB0458 /* Debug */,
+				E44009EC1CDFAB2900EB0458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		E41FB6AB1CD2EC4C005CAF9E /* Build configuration list for PBXNativeTarget "OscillatorUIUITests" */ = {
+		E44009ED1CDFAB2900EB0458 /* Build configuration list for PBXNativeTarget "OscillatorUIUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E41FB6AC1CD2EC4C005CAF9E /* Debug */,
-				E41FB6AD1CD2EC4C005CAF9E /* Release */,
+				E44009EE1CDFAB2900EB0458 /* Debug */,
+				E44009EF1CDFAB2900EB0458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E41FB6751CD2EC4C005CAF9E /* Project object */;
+	rootObject = E44009B71CDFAB2800EB0458 /* Project object */;
 }
