@@ -82,8 +82,8 @@
                                     <rect key="frame" x="536" y="195" width="42" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverb Ammount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGr-wj-kro">
-                                <rect key="frame" x="124" y="195" width="133" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverb Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGr-wj-kro">
+                                <rect key="frame" x="124" y="195" width="118" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -156,9 +156,6 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="2uh-j6-gsQ"/>
-                                <exclude reference="W3L-sX-7KQ"/>
-                                <exclude reference="m92-GI-D97"/>
                                 <exclude reference="a8H-pL-ySR"/>
                                 <exclude reference="cz1-dj-iZW"/>
                                 <exclude reference="jb9-si-eaL"/>
@@ -170,12 +167,14 @@
                                 <exclude reference="SBw-3H-P4c"/>
                                 <exclude reference="e0p-lY-Zna"/>
                                 <exclude reference="q0m-0b-Io1"/>
+                                <exclude reference="2uh-j6-gsQ"/>
+                                <exclude reference="W3L-sX-7KQ"/>
+                                <exclude reference="m92-GI-D97"/>
                                 <exclude reference="xX3-Xy-UAb"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <exclude reference="fuv-dK-riV"/>
                                 <exclude reference="xth-aL-HWH"/>
                                 <include reference="5aA-1H-gsI"/>
                                 <include reference="8dN-Yb-iUb"/>
@@ -183,20 +182,21 @@
                                 <include reference="I4g-je-ddY"/>
                                 <include reference="SBw-3H-P4c"/>
                                 <exclude reference="a2M-ms-fhX"/>
+                                <exclude reference="fuv-dK-riV"/>
                                 <exclude reference="ola-yy-nVX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
-                                <include reference="2uh-j6-gsQ"/>
-                                <include reference="W3L-sX-7KQ"/>
-                                <include reference="m92-GI-D97"/>
                                 <include reference="a8H-pL-ySR"/>
                                 <include reference="cz1-dj-iZW"/>
                                 <include reference="jb9-si-eaL"/>
                                 <include reference="qmF-47-sGj"/>
                                 <include reference="e0p-lY-Zna"/>
                                 <exclude reference="q0m-0b-Io1"/>
+                                <include reference="2uh-j6-gsQ"/>
+                                <include reference="W3L-sX-7KQ"/>
+                                <include reference="m92-GI-D97"/>
                                 <include reference="xX3-Xy-UAb"/>
                             </mask>
                         </variation>
