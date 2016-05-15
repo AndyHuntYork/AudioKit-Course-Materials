@@ -40,7 +40,9 @@ public class AudioSampler {
             player is currently at) is less than the total length of the audio 
             file. So, if we push our button while the audio file is stopped, it
             will start playing. If we press it again, it will start playing
-            from the beginning of the track. */
+            from the beginning of the track. The reason we need to add this 
+            check is that even though the audio file may be done playing, the 
+            audio PLAYER itself is still playing */
         
         if playerOne.isPlaying && playerOne.playhead < playerOne.duration {
             playerOne.stop()
