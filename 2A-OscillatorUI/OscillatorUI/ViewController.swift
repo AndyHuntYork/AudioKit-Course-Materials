@@ -47,23 +47,6 @@ class ViewController: UIViewController {
     
     // MARK: UI Controls
     
-    @IBAction func startSound(sender: AnyObject) {
-        /* Whenever we click on the "Start" button, we will turn
-         on our oscillator. Additionally, we will update our labels
-         with the oscillator's frequency values */
-        
-        oscillator.start()
-        
-        frequencyLabel.text = String(format: "%0.2f", oscillator.frequency)
-    }
-    
-    @IBAction func stopSound(sender: AnyObject) {
-        /* Stop the oscillator from playing whenever the "Stop" button
-         is pressed */
-        oscillator.stop()
-        
-    }
-    
     @IBAction func changeFrequency(sender: AnyObject) {
         /* Whenever we move the Frequency slider, we'll change our
          oscillator's frequency value. Since UISlider's send out integer
@@ -78,7 +61,6 @@ class ViewController: UIViewController {
          property */
 
         frequencyLabel.text = String(format: "%0.2f", oscillator.frequency)
-        
         }
  
     
@@ -88,5 +70,3 @@ class ViewController: UIViewController {
     }
     
 }
-
-
