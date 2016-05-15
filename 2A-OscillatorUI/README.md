@@ -10,7 +10,7 @@ As a beginner exercise, the student is encouraged to determine how to use a sing
 toggle switch to turn the oscillator on and off, rather than using two `UIButton`s.
 
 The code below demonstrates how you can determine if an oscillator is playing by detecting the 
-`bool` value of `AKOscillator`'s `isStarted1 property. When the `UIButton` is pressed, the oscillator
+`bool` value of `AKOscillator`'s `isStarted property. When the `UIButton` is pressed, the oscillator
 will stop if `isStarted` is `true`, and the oscillator will start playing if `isStarted` is `false.`
 
 ```
