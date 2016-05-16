@@ -54,7 +54,7 @@ class ViewController: UIViewController {
 
     @IBAction func playerTwoLoopingValueChanged(sender: AnyObject) {
         audioSampler.playerTwo.stop()
-        if playerOneLoopControl.selectedSegmentIndex == 0 {
+        if playerTwoLoopControl.selectedSegmentIndex == 0 {
             audioSampler.playerTwo.looping = false
         } else {
             audioSampler.playerTwo.looping = true
