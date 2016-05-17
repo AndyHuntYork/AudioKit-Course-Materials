@@ -37,10 +37,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         /* Just like the earlier examples, we'll set AudioKit's output
-         and start the AudioKit engine when the app starts, but we won't
-         start our oscillator just yet... */
+         and start the AudioKit engine and the oscillator */
         
         AudioKit.output = oscillator
+        oscillator.start()
         AudioKit.start()
     }
     
