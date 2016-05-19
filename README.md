@@ -30,3 +30,7 @@ We'll also demonstrate how to chain audio effects together.
 
 7) Reverb UI --- an app that demonstrates a more complicated UI controlled set-up, as well as 
 providing an introduction to some basic Object-Oriented programming concepts. 
+
+9) AKFMSynthInstrument --- an example showing how to use AudioKit's included Instruments for creating
+your own synthesizer instrument app.
+

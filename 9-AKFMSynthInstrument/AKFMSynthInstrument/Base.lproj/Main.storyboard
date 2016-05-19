@@ -18,26 +18,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtF-Oa-d2U">
-                                <rect key="frame" x="280" y="185" width="30" height="30"/>
-                                <state key="normal" title="C"/>
+                                <rect key="frame" x="296" y="165" width="30" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="C">
+                                    <color key="titleShadowColor" red="0.0" green="0.35015009930000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="playC:" destination="BYZ-38-t0r" eventType="touchDown" id="bW5-sT-1LY"/>
-                                    <action selector="stopC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bxe-gp-Ng9"/>
+                                    <action selector="stopC:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="3Wx-r3-vfS"/>
+                                    <action selector="stopC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yOW-uQ-lYe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlw-JQ-e8z">
-                                <rect key="frame" x="280" y="335" width="30" height="30"/>
-                                <state key="normal" title="G"/>
+                                <rect key="frame" x="296" y="375" width="30" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="G">
+                                    <color key="titleShadowColor" red="0.0" green="0.35015009930000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="playG:" destination="BYZ-38-t0r" eventType="touchDown" id="Wk2-84-fOp"/>
                                     <action selector="stopG:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Aw-ub-JZg"/>
+                                    <action selector="stopG:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="QwQ-nK-rJF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYR-ri-4nz">
-                                <rect key="frame" x="280" y="259" width="30" height="30"/>
-                                <state key="normal" title="E"/>
+                                <rect key="frame" x="296" y="269" width="30" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="E">
+                                    <color key="titleShadowColor" red="0.0" green="0.35015009930000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="playE:" destination="BYZ-38-t0r" eventType="touchDown" id="vJ8-vq-9vp"/>
+                                    <action selector="stopE:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="MwM-ba-tst"/>
                                     <action selector="stopE:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tT3-x4-DnH"/>
                                 </connections>
                             </button>
@@ -55,7 +67,7 @@
                             <constraint firstItem="Wlw-JQ-e8z" firstAttribute="top" secondItem="KYR-ri-4nz" secondAttribute="bottom" constant="46" id="ITf-Cl-toU"/>
                             <constraint firstItem="FtF-Oa-d2U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Idr-6e-JwX"/>
                             <constraint firstItem="FtF-Oa-d2U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JxR-tO-DJ3"/>
-                            <constraint firstItem="FtF-Oa-d2U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="280" id="KUF-34-d6x">
+                            <constraint firstItem="FtF-Oa-d2U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="296" id="KUF-34-d6x">
                                 <variation key="heightClass=compact" constant="285"/>
                                 <variation key="widthClass=compact" constant="185"/>
                                 <variation key="widthClass=regular" constant="385"/>
@@ -71,7 +83,7 @@
                             <constraint firstItem="FtF-Oa-d2U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iDu-Xq-R0f"/>
                             <constraint firstItem="FtF-Oa-d2U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="139" id="oQK-LU-VrH"/>
                             <constraint firstItem="Wlw-JQ-e8z" firstAttribute="top" secondItem="KYR-ri-4nz" secondAttribute="bottom" constant="46" id="sqy-FS-PSe"/>
-                            <constraint firstItem="FtF-Oa-d2U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="wPN-Ky-5jN">
+                            <constraint firstItem="FtF-Oa-d2U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="145" id="wPN-Ky-5jN">
                                 <variation key="heightClass=compact" constant="90"/>
                                 <variation key="widthClass=compact" constant="139"/>
                                 <variation key="widthClass=regular" constant="167"/>
