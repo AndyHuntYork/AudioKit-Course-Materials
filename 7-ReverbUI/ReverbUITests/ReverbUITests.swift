@@ -3,7 +3,7 @@
 //  ReverbUITests
 //
 //  Created by Nicholas Arner on 4/30/16.
-//  Copyright © 2016 Nicholas Arner. All rights reserved.
+//  Copyright © 2016 University of York Department of Electronics (Coded by Nick Arner)
 //
 
 import XCTest
