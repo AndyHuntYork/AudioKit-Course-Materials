@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E43364161CF0FFE200FCB4C6 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = E43364151CF0FFE200FCB4C6 /* Sounds */; };
 		E465EDAC1CE762E600D2776D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E465EDAB1CE762E600D2776D /* AppDelegate.swift */; };
 		E465EDAE1CE762E600D2776D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E465EDAD1CE762E600D2776D /* ViewController.swift */; };
 		E465EDB11CE762E600D2776D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E465EDAF1CE762E600D2776D /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		E465EDDB1CE762FC00D2776D /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E465EDD91CE762F700D2776D /* AudioKit.framework */; };
 		E465EDDC1CE762FC00D2776D /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E465EDD91CE762F700D2776D /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E4E65B281CEF3386006DE478 /* SequencerInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E65B271CEF3386006DE478 /* SequencerInstrument.swift */; };
-		E4E65B2B1CEF3431006DE478 /* fmpia1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E4E65B2A1CEF3431006DE478 /* fmpia1.wav */; };
 		E4E65B2D1CEF343C006DE478 /* 4tracks.mid in Resources */ = {isa = PBXBuildFile; fileRef = E4E65B2C1CEF343C006DE478 /* 4tracks.mid */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E43364151CF0FFE200FCB4C6 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		E465EDA81CE762E600D2776D /* SimpleSequences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSequences.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E465EDAB1CE762E600D2776D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E465EDAD1CE762E600D2776D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,8 +69,6 @@
 		E465EDCD1CE762E600D2776D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E465EDD91CE762F700D2776D /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 		E4E65B271CEF3386006DE478 /* SequencerInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequencerInstrument.swift; sourceTree = "<group>"; };
-		E4E65B291CEF3428006DE478 /* sawPiano1.exs */ = {isa = PBXFileReference; lastKnownFileType = file; path = sawPiano1.exs; sourceTree = "<group>"; };
-		E4E65B2A1CEF3431006DE478 /* fmpia1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fmpia1.wav; sourceTree = "<group>"; };
 		E4E65B2C1CEF343C006DE478 /* 4tracks.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 4tracks.mid; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,9 +129,8 @@
 				E465EDB21CE762E600D2776D /* Assets.xcassets */,
 				E465EDB41CE762E600D2776D /* LaunchScreen.storyboard */,
 				E465EDB71CE762E600D2776D /* Info.plist */,
-				E4E65B291CEF3428006DE478 /* sawPiano1.exs */,
-				E4E65B2A1CEF3431006DE478 /* fmpia1.wav */,
 				E4E65B2C1CEF343C006DE478 /* 4tracks.mid */,
+				E43364151CF0FFE200FCB4C6 /* Sounds */,
 			);
 			path = SimpleSequences;
 			sourceTree = "<group>";
@@ -260,7 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4E65B2B1CEF3431006DE478 /* fmpia1.wav in Resources */,
+				E43364161CF0FFE200FCB4C6 /* Sounds in Resources */,
 				E4E65B2D1CEF343C006DE478 /* 4tracks.mid in Resources */,
 				E465EDB61CE762E600D2776D /* LaunchScreen.storyboard in Resources */,
 				E465EDB31CE762E600D2776D /* Assets.xcassets in Resources */,

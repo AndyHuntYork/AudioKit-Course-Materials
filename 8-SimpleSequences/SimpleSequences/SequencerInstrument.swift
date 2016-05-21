@@ -10,7 +10,7 @@ import AudioKit
 
 public class SequencerInstrument {
     
-    //Create our sequencer
+    //Create variable to store our Sequencer
     var sequencer: AKSequencer
     
     init() {
@@ -20,7 +20,9 @@ public class SequencerInstrument {
         
         /* Load a file into the sampler. Here, we demonstrate that in addition
             to using .WAV files, you can also use EXS24 files. EXS24 files
-            are sample files used in Logic Pro's EXS24 sampler. Check out some
+            are sample files used in Logic Pro's EXS24 sampler. In the left side
+            panel, you'll see that we also have a "basicSamples" folder, which 
+            are small audio files used by the EXS file. Check out some
             of the sample files you can use here: 
          http://www.logic-cafe.com/lc/index.php/free-downloads/exs24-instruments
             
@@ -29,9 +31,9 @@ public class SequencerInstrument {
             the Wikipedia page gives a good overview: 
             https://en.wikipedia.org/wiki/SoundFont */
         
-        ///Program can't seem to find this file
-//        sampler.loadEXS24("sawPiano1")
-        sampler.loadWav("fmpia1")
+        //Comment/uncomment these lines to load the sample that you want to use
+        sampler.loadEXS24("Sounds/sawPiano1")
+//        sampler.loadWav("Sounds/fmpia1")
         
         //Create a reverb, and run our sampler through it
         let reverb = AKCostelloReverb(sampler)
@@ -39,18 +41,13 @@ public class SequencerInstrument {
 
         /*Initialize our sequencer. We give it the name of the MIDI file we 
             want to use to play our sequence. */
+        sequencer = AKSequencer(filename: "4tracks", engine: AudioKit.engine)
         
-        sequencer = AKSequencer(filename: "4tracks")
-
         //Set the length of our sequence in beats
         sequencer.setLength(4)
         
         //Allow our sequence to loop 
         sequencer.enableLooping()
-        
-        
-        ///Aure, do we need this line?
-//        sequencer.setGlobalAVAudioUnitOutput(sampler.samplerUnit)
 
         //Start AudioKit, and the sequencer
         AudioKit.start()
