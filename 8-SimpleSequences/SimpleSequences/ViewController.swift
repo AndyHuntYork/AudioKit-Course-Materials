@@ -11,13 +11,11 @@ import AudioKit
 
 class ViewController: UIViewController {
 
-    
     var sequencer = SequencerInstrument!()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         
         sequencer = SequencerInstrument()
     }
