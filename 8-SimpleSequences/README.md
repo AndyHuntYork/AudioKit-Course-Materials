@@ -3,6 +3,25 @@
 Sequences are a powerful feature in AudioKit. `AKSequencer` let you define musical events through an 
 imported MIDI file, and use audio samples as the source material for the sequence
 
+The MIDI file used in this example consists of 4 piano tracks. If you open the file in GarageBand, 
+this is what you will see:
+
+![alt text](MIDIFile-GarageBand.png)
+
+The MIDI file you use is how the Sequencer knows what notes to play. Think of what you're doing as
+writing the score that the Sequencer will play, and you define what instrument you want to play
+the parts of the score using AudioKit. 
+
+If you're wanting to start your own project using Sequences from scratch, here's what you'll need to
+do:
+
+1) Make a MIDI file in GarageBand, Logic, or other DAW or Sequencer of your choice. 
+
+2) Add tracks for each instrument or voice that you will need
+
+3) Develop each track with whatever instruments you want, knowing that those instruments will be replaced in AudioKit, and add the notes you want to use for each track. 
+
+
 This example shows how sequences can be played-back, but there is quite a lot to explore beyond this 
 example (such as changing tempo, adding pre-roll, rewinding, etc), so I highly encourage you to read 
 the [documentation](http://audiokit.io/docs/Classes/AKSequencer.html) and check out the Sequencer 
