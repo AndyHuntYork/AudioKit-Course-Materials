@@ -5,15 +5,24 @@ This is example is intended as a stepping-off point for students wanting to lear
 
 Specifically, we're moving on from audio file play-back, looping, mixing, effects such as reverb, 
 and sequencing, to showing how you can use some of AudioKit's existing [Instrument classes](http://audiokit.io/docs/Instruments.html) to build a synthesizer app
-of your own. 
+of your own. These instruments are wrappers around various AudioKit synthesizers and generators.
 
 This example uses the [AKFMSynth class](http://audiokit.io/docs/Instruments.html#/s:C8AudioKit9AKFMSynth). `AKFMSynth` is a wrapper class
 around `AKFMOscillator`(http://audiokit.io/docs/Classes/AKFMOscillator.html) that allows you to 
-create multiple "voices" in a synth. 
+create multiple "voices" of an `FMOscillator`, making it playable as a polyphonic instrument. 
+
+Just like the `AKFMOscillator` that it encapsulates, you can control the following parameters:
+
+* modulatingMultiplier
+* modulationIndex
+* attackDuration
+* decayDuration
+* sustainLevel
+* releaseDuration
+
 If you're not familiar with the concept of voices in a synthesizer, they're essentially the number 
-of oscillators you have at your disposal.
-So, if we gave our `fmSynth` three voices (as we do in this example), we'd be able to control three 
-oscillators:
+of oscillators you have at your disposal.So, if we gave our `fmSynth` three voices (as we do in this 
+example), we'd be able to control three oscillators:
 
 ```
 fmSynth = AKFMSynth(voiceCount: 3)
