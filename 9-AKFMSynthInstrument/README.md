@@ -68,6 +68,26 @@ file, and you'll see the screenshot below:
 
 ![alt text](TouchEvents.png)
 
-
 You can see that both the `Touch Up Inside` and `Touch Up Outside` events are connect to our `stopC` 
 function. You should also note that the `Touch Down` event is connected to `Play C`. 
+
+## Editing Sounds
+
+Now that you have an understanding on how `AKFMSynth` encapsulates `AKFMOscillator` to be a 
+playable, polyphonic instrument, try changing the sounds to be something that you would imagine 
+performing or composing with. If you haven't used Playgrounds yet, here's a good chance to explore 
+them. Since `AKFMSynth` is a wrapper for `AKFMOscillator`, you can get an idea of what sounds are
+possible by going to the [AKFMOscillator playground](http://audiokit.io/playgrounds/FM%20Oscillator/)
+(the link is a video of that particular playground in action). 
+
+We've included five presets in that Playground to explore: 
+
+* Stun Ray
+* Wobble
+* Fog Horn
+* Buzzer
+* Spiral
+* Randomize 
+
+I'd encourage you to explore these presets, experiment with different values to get the sounds you 
+like, and use those in your polyphonic `AKFMSynth` app!

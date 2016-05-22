@@ -1,7 +1,6 @@
 # Simple Sequences
 
-Sequences are a powerful feature in AudioKit. `AKSequencer` let you define musical events through an 
-imported MIDI file, and use audio samples as the source material for the sequence
+Sequences are a powerful feature in AudioKit. `AKSequencer` lets you define musical events through an imported MIDI file, and use audio samples as the source material for the sequence
 
 The MIDI file used in this example consists of 4 piano tracks. If you open the file in GarageBand, 
 this is what you will see:
