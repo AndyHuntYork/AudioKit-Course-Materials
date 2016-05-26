@@ -3,7 +3,7 @@
 //  AudioFileReverbUITests
 //
 //  Created by Nicholas Arner on 4/28/16.
-//  Copyright © 2016 University of York Department of Electronics (Coded by Nick Arner)
+//  Copyright © 2016 University of York Department of Electronics 
 //
 
 import XCTest
