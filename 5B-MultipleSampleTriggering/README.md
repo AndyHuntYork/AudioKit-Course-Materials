@@ -95,6 +95,6 @@ selected, then we will loop the audio file.
 Once you've selected what you want your loop value to be, go ahead and play the audio sample again, 
 and see what happens!
 
-## NOTE: Currently, `AKAudioPlayer` works best with audio clips that are 44.1K stereo. This is due
+# NOTE: 
+Currently, `AKAudioPlayer` works best with audio clips that are 44.1K stereo. This is due
 to a known bug that will be resolved in a future version of AudioKit. 
-
