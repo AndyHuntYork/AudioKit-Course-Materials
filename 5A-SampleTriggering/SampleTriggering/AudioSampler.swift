@@ -18,12 +18,12 @@ public class AudioSampler {
         
         //Load in our audio samples
         let bundle = NSBundle.mainBundle()
-        let sampleOne    = bundle.pathForResource("siren", ofType: "wav")
-        let sampleTwo    = bundle.pathForResource("drum-and-bass-loop", ofType: "wav")
+        let sampleOne = bundle.pathForResource("siren", ofType: "wav")
+        let sampleTwo = bundle.pathForResource("drum-and-bass-loop", ofType: "wav")
         
         //Create audio players for each track
-        playerOne   = AKAudioPlayer(sampleOne!)
-        playerTwo   = AKAudioPlayer(sampleTwo!)
+        playerOne = AKAudioPlayer(sampleOne!)
+        playerTwo = AKAudioPlayer(sampleTwo!)
                 
         //Create a mixer that uses our audio loops as inputs
         let mixer = AKMixer(playerOne, playerTwo)
@@ -33,12 +33,11 @@ public class AudioSampler {
         AudioKit.start()
     }
     
-    
     public func stopOrPlaySampleOne() {
-            playerOne.play()
-        }
+        playerOne.play()
+    }
     
     public func stopOrPlaySampleTwo() {
-            playerTwo.play()
+        playerTwo.play()
     }
 }

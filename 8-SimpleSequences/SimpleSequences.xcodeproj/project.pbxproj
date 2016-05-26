@@ -15,8 +15,8 @@
 		E465EDB61CE762E600D2776D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E465EDB41CE762E600D2776D /* LaunchScreen.storyboard */; };
 		E465EDC11CE762E600D2776D /* SimpleSequencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E465EDC01CE762E600D2776D /* SimpleSequencesTests.swift */; };
 		E465EDCC1CE762E600D2776D /* SimpleSequencesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E465EDCB1CE762E600D2776D /* SimpleSequencesUITests.swift */; };
-		E465EDDB1CE762FC00D2776D /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E465EDD91CE762F700D2776D /* AudioKit.framework */; };
-		E465EDDC1CE762FC00D2776D /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E465EDD91CE762F700D2776D /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E47881C91CF7AD9700C0D2E2 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47881C71CF7AD9200C0D2E2 /* AudioKit.framework */; };
+		E47881CA1CF7AD9700C0D2E2 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E47881C71CF7AD9200C0D2E2 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E4E65B281CEF3386006DE478 /* SequencerInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E65B271CEF3386006DE478 /* SequencerInstrument.swift */; };
 		E4E65B2D1CEF343C006DE478 /* 4tracks.mid in Resources */ = {isa = PBXBuildFile; fileRef = E4E65B2C1CEF343C006DE478 /* 4tracks.mid */; };
 /* End PBXBuildFile section */
@@ -45,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E465EDDC1CE762FC00D2776D /* AudioKit.framework in Embed Frameworks */,
+				E47881CA1CF7AD9700C0D2E2 /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +67,7 @@
 		E465EDC71CE762E600D2776D /* SimpleSequencesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleSequencesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E465EDCB1CE762E600D2776D /* SimpleSequencesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSequencesUITests.swift; sourceTree = "<group>"; };
 		E465EDCD1CE762E600D2776D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E465EDD91CE762F700D2776D /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		E47881C71CF7AD9200C0D2E2 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 		E4E65B271CEF3386006DE478 /* SequencerInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequencerInstrument.swift; sourceTree = "<group>"; };
 		E4E65B2C1CEF343C006DE478 /* 4tracks.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 4tracks.mid; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E465EDDB1CE762FC00D2776D /* AudioKit.framework in Frameworks */,
+				E47881C91CF7AD9700C0D2E2 /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,11 +101,11 @@
 		E465ED9F1CE762E600D2776D = {
 			isa = PBXGroup;
 			children = (
+				E47881C71CF7AD9200C0D2E2 /* AudioKit.framework */,
 				E465EDAA1CE762E600D2776D /* SimpleSequences */,
 				E465EDBF1CE762E600D2776D /* SimpleSequencesTests */,
 				E465EDCA1CE762E600D2776D /* SimpleSequencesUITests */,
 				E465EDA91CE762E600D2776D /* Products */,
-				E465EDD91CE762F700D2776D /* AudioKit.framework */,
 			);
 			sourceTree = "<group>";
 		};

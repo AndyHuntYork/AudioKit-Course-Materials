@@ -34,3 +34,7 @@ providing an introduction to some basic Object-Oriented programming concepts.
 9) AKFMSynthInstrument --- an example showing how to use AudioKit's included Instruments for creating
 your own synthesizer instrument app.
 
+## AudioKit version
+
+The examples here use AudioKit version 3.1.3, which is the most up-to-date version as of this 
+writing. Please make sure you use 3.1.3 or higher when working on your projects.

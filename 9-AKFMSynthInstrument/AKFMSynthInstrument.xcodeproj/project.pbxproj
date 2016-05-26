@@ -14,9 +14,9 @@
 		E45427CC1CED2F94009448F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45427CA1CED2F94009448F2 /* LaunchScreen.storyboard */; };
 		E45427D71CED2F95009448F2 /* AKFMSynthInstrumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45427D61CED2F95009448F2 /* AKFMSynthInstrumentTests.swift */; };
 		E45427E21CED2F95009448F2 /* AKFMSynthInstrumentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45427E11CED2F95009448F2 /* AKFMSynthInstrumentUITests.swift */; };
-		E45427F11CED2FB0009448F2 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45427EF1CED2FAB009448F2 /* AudioKit.framework */; };
-		E45427F21CED2FB0009448F2 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E45427EF1CED2FAB009448F2 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E45427F51CED300F009448F2 /* AKFMSynth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45427F41CED300F009448F2 /* AKFMSynth.swift */; };
+		E47881CD1CF7ADC600C0D2E2 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47881CB1CF7ADBD00C0D2E2 /* AudioKit.framework */; };
+		E47881CE1CF7ADC600C0D2E2 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E47881CB1CF7ADBD00C0D2E2 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E45427F21CED2FB0009448F2 /* AudioKit.framework in Embed Frameworks */,
+				E47881CE1CF7ADC600C0D2E2 /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,8 +64,8 @@
 		E45427DD1CED2F95009448F2 /* AKFMSynthInstrumentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKFMSynthInstrumentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45427E11CED2F95009448F2 /* AKFMSynthInstrumentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKFMSynthInstrumentUITests.swift; sourceTree = "<group>"; };
 		E45427E31CED2F95009448F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E45427EF1CED2FAB009448F2 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 		E45427F41CED300F009448F2 /* AKFMSynth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AKFMSynth.swift; path = ../AKFMSynth.swift; sourceTree = "<group>"; };
+		E47881CB1CF7ADBD00C0D2E2 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E45427F11CED2FB0009448F2 /* AudioKit.framework in Frameworks */,
+				E47881CD1CF7ADC600C0D2E2 /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,11 +97,11 @@
 		E45427B51CED2F94009448F2 = {
 			isa = PBXGroup;
 			children = (
+				E47881CB1CF7ADBD00C0D2E2 /* AudioKit.framework */,
 				E45427C01CED2F94009448F2 /* AKFMSynthInstrument */,
 				E45427D51CED2F95009448F2 /* AKFMSynthInstrumentTests */,
 				E45427E01CED2F95009448F2 /* AKFMSynthInstrumentUITests */,
 				E45427BF1CED2F94009448F2 /* Products */,
-				E45427EF1CED2FAB009448F2 /* AudioKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -516,6 +516,7 @@
 				E45427E81CED2F95009448F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E45427E91CED2F95009448F2 /* Build configuration list for PBXNativeTarget "AKFMSynthInstrumentTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +525,7 @@
 				E45427EB1CED2F95009448F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E45427EC1CED2F95009448F2 /* Build configuration list for PBXNativeTarget "AKFMSynthInstrumentUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +534,7 @@
 				E45427EE1CED2F95009448F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

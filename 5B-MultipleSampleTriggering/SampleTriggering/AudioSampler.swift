@@ -16,12 +16,11 @@ public class AudioSampler {
     var playerThree: AKAudioPlayer
     
     init () {
-        
         //Load in our audio samples
         let bundle = NSBundle.mainBundle()
-        let sampleOne    = bundle.pathForResource("pianoSample", ofType: "wav")
-        let sampleTwo    = bundle.pathForResource("drum-and-bass-loop", ofType: "wav")
-        let sampleThree = bundle.pathForResource("siren", ofType: "wav")
+        let sampleOne   = bundle.pathForResource("siren", ofType: "wav")
+        let sampleTwo   = bundle.pathForResource("drum-and-bass-loop", ofType: "wav")
+        let sampleThree = bundle.pathForResource("pianoSample", ofType: "wav")
             
         //Create audio players for each track
         playerOne   = AKAudioPlayer(sampleOne!)

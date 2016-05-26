@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E43C11FC1CD52D4B004E361A /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C11FA1CD52D47004E361A /* AudioKit.framework */; };
-		E43C11FD1CD52D4B004E361A /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E43C11FA1CD52D47004E361A /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E43C12001CD52D8E004E361A /* drumloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43C11FF1CD52D8E004E361A /* drumloop.wav */; };
 		E43C12061CD575B2004E361A /* ReverbAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43C12051CD575B2004E361A /* ReverbAudioPlayer.swift */; };
 		E43CC7BE1CD52D10007C4D6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CC7BD1CD52D10007C4D6A /* AppDelegate.swift */; };
@@ -18,6 +16,8 @@
 		E43CC7C81CD52D10007C4D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43CC7C61CD52D10007C4D6A /* LaunchScreen.storyboard */; };
 		E43CC7D31CD52D11007C4D6A /* ReverbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CC7D21CD52D11007C4D6A /* ReverbUITests.swift */; };
 		E43CC7DE1CD52D11007C4D6A /* ReverbUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CC7DD1CD52D11007C4D6A /* ReverbUIUITests.swift */; };
+		E47881C51CF7AD6600C0D2E2 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47881C31CF7AD5000C0D2E2 /* AudioKit.framework */; };
+		E47881C61CF7AD6600C0D2E2 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E47881C31CF7AD5000C0D2E2 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E43C11FD1CD52D4B004E361A /* AudioKit.framework in Embed Frameworks */,
+				E47881C61CF7AD6600C0D2E2 /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +52,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E43C11FA1CD52D47004E361A /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 		E43C11FF1CD52D8E004E361A /* drumloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drumloop.wav; sourceTree = "<group>"; };
 		E43C12051CD575B2004E361A /* ReverbAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReverbAudioPlayer.swift; path = ../ReverbAudioPlayer.swift; sourceTree = "<group>"; };
 		E43CC7BA1CD52D10007C4D6A /* ReverbUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReverbUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +67,7 @@
 		E43CC7D91CD52D11007C4D6A /* ReverbUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReverbUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43CC7DD1CD52D11007C4D6A /* ReverbUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverbUIUITests.swift; sourceTree = "<group>"; };
 		E43CC7DF1CD52D11007C4D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47881C31CF7AD5000C0D2E2 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E43C11FC1CD52D4B004E361A /* AudioKit.framework in Frameworks */,
+				E47881C51CF7AD6600C0D2E2 /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 		E43CC7B11CD52D10007C4D6A = {
 			isa = PBXGroup;
 			children = (
-				E43C11FA1CD52D47004E361A /* AudioKit.framework */,
+				E47881C31CF7AD5000C0D2E2 /* AudioKit.framework */,
 				E43CC7BC1CD52D10007C4D6A /* ReverbUI */,
 				E43CC7D11CD52D11007C4D6A /* ReverbUITests */,
 				E43CC7DC1CD52D11007C4D6A /* ReverbUIUITests */,

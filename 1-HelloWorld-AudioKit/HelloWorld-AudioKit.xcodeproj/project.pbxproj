@@ -14,8 +14,8 @@
 		E41FB5861CD2C13E005CAF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41FB5841CD2C13E005CAF9E /* LaunchScreen.storyboard */; };
 		E41FB5911CD2C13E005CAF9E /* HelloWorld_AudioKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB5901CD2C13E005CAF9E /* HelloWorld_AudioKitTests.swift */; };
 		E41FB59C1CD2C13E005CAF9E /* HelloWorld_AudioKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB59B1CD2C13E005CAF9E /* HelloWorld_AudioKitUITests.swift */; };
-		E41FB5AE1CD2CB33005CAF9E /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41FB5A91CD2C942005CAF9E /* AudioKit.framework */; };
-		E41FB5AF1CD2CB33005CAF9E /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E41FB5A91CD2C942005CAF9E /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E4E9F5721CF671430058FBD6 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E9F5701CF671230058FBD6 /* AudioKit.framework */; };
+		E4E9F5731CF671430058FBD6 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4E9F5701CF671230058FBD6 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E41FB5AF1CD2CB33005CAF9E /* AudioKit.framework in Embed Frameworks */,
+				E4E9F5731CF671430058FBD6 /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +63,7 @@
 		E41FB5971CD2C13E005CAF9E /* HelloWorld-AudioKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HelloWorld-AudioKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41FB59B1CD2C13E005CAF9E /* HelloWorld_AudioKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld_AudioKitUITests.swift; sourceTree = "<group>"; };
 		E41FB59D1CD2C13E005CAF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E41FB5A91CD2C942005CAF9E /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		E4E9F5701CF671230058FBD6 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41FB5AE1CD2CB33005CAF9E /* AudioKit.framework in Frameworks */,
+				E4E9F5721CF671430058FBD6 /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 		E41FB56F1CD2C13E005CAF9E = {
 			isa = PBXGroup;
 			children = (
-				E41FB5A91CD2C942005CAF9E /* AudioKit.framework */,
+				E4E9F5701CF671230058FBD6 /* AudioKit.framework */,
 				E41FB57A1CD2C13E005CAF9E /* HelloWorld-AudioKit */,
 				E41FB58F1CD2C13E005CAF9E /* HelloWorld-AudioKitTests */,
 				E41FB59A1CD2C13E005CAF9E /* HelloWorld-AudioKitUITests */,
@@ -512,6 +512,7 @@
 				E41FB5A21CD2C13E005CAF9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E41FB5A31CD2C13E005CAF9E /* Build configuration list for PBXNativeTarget "HelloWorld-AudioKitTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +521,7 @@
 				E41FB5A51CD2C13E005CAF9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E41FB5A61CD2C13E005CAF9E /* Build configuration list for PBXNativeTarget "HelloWorld-AudioKitUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +530,7 @@
 				E41FB5A81CD2C13E005CAF9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -15,11 +15,11 @@
 		E411DDB21CDFFC9B00EEADEE /* SampleTriggeringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411DDB11CDFFC9B00EEADEE /* SampleTriggeringTests.swift */; };
 		E411DDBD1CDFFC9B00EEADEE /* SampleTriggeringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411DDBC1CDFFC9B00EEADEE /* SampleTriggeringUITests.swift */; };
 		E411DDD01CDFFCDB00EEADEE /* AudioSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411DDCF1CDFFCDB00EEADEE /* AudioSampler.swift */; };
-		E411DDD61CE0099D00EEADEE /* drum-and-bass-loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E411DDD51CE0099D00EEADEE /* drum-and-bass-loop.wav */; };
-		E411DDD81CE0174600EEADEE /* pianoSample.wav in Resources */ = {isa = PBXBuildFile; fileRef = E411DDD71CE0174600EEADEE /* pianoSample.wav */; };
-		E411DDDA1CE017B600EEADEE /* siren.wav in Resources */ = {isa = PBXBuildFile; fileRef = E411DDD91CE017B600EEADEE /* siren.wav */; };
-		E411DDDF1CE16A4400EEADEE /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E411DDDD1CE16A3F00EEADEE /* AudioKit.framework */; };
-		E411DDE01CE16A4400EEADEE /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E411DDDD1CE16A3F00EEADEE /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E43F9E111CF7189200E7EFC7 /* drum-and-bass-loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43F9E0E1CF7189200E7EFC7 /* drum-and-bass-loop.wav */; };
+		E43F9E131CF7189200E7EFC7 /* siren.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43F9E101CF7189200E7EFC7 /* siren.wav */; };
+		E47881BE1CF7ACDA00C0D2E2 /* pianoSample.wav in Resources */ = {isa = PBXBuildFile; fileRef = E47881BD1CF7ACDA00C0D2E2 /* pianoSample.wav */; };
+		E48E1BA11CF675B000A712CE /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48E1B9F1CF675AB00A712CE /* AudioKit.framework */; };
+		E48E1BA21CF675B000A712CE /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E48E1B9F1CF675AB00A712CE /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,13 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E411DDCE1CDFFCB600EEADEE /* Embed Frameworks */ = {
+		E48E1BA31CF675B000A712CE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E411DDE01CE16A4400EEADEE /* AudioKit.framework in Embed Frameworks */,
+				E48E1BA21CF675B000A712CE /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,10 +68,10 @@
 		E411DDBC1CDFFC9B00EEADEE /* SampleTriggeringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTriggeringUITests.swift; sourceTree = "<group>"; };
 		E411DDBE1CDFFC9B00EEADEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E411DDCF1CDFFCDB00EEADEE /* AudioSampler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSampler.swift; sourceTree = "<group>"; };
-		E411DDD51CE0099D00EEADEE /* drum-and-bass-loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drum-and-bass-loop.wav"; sourceTree = "<group>"; };
-		E411DDD71CE0174600EEADEE /* pianoSample.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoSample.wav; sourceTree = "<group>"; };
-		E411DDD91CE017B600EEADEE /* siren.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = siren.wav; sourceTree = "<group>"; };
-		E411DDDD1CE16A3F00EEADEE /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		E43F9E0E1CF7189200E7EFC7 /* drum-and-bass-loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drum-and-bass-loop.wav"; sourceTree = "<group>"; };
+		E43F9E101CF7189200E7EFC7 /* siren.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = siren.wav; sourceTree = "<group>"; };
+		E47881BD1CF7ACDA00C0D2E2 /* pianoSample.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoSample.wav; sourceTree = "<group>"; };
+		E48E1B9F1CF675AB00A712CE /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E411DDDF1CE16A4400EEADEE /* AudioKit.framework in Frameworks */,
+				E48E1BA11CF675B000A712CE /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,11 +103,11 @@
 		E411DD901CDFFC9B00EEADEE = {
 			isa = PBXGroup;
 			children = (
+				E48E1B9F1CF675AB00A712CE /* AudioKit.framework */,
 				E411DD9B1CDFFC9B00EEADEE /* SampleTriggering */,
 				E411DDB01CDFFC9B00EEADEE /* SampleTriggeringTests */,
 				E411DDBB1CDFFC9B00EEADEE /* SampleTriggeringUITests */,
 				E411DD9A1CDFFC9B00EEADEE /* Products */,
-				E411DDDD1CE16A3F00EEADEE /* AudioKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,9 +131,9 @@
 				E411DDA31CDFFC9B00EEADEE /* Assets.xcassets */,
 				E411DDA51CDFFC9B00EEADEE /* LaunchScreen.storyboard */,
 				E411DDA81CDFFC9B00EEADEE /* Info.plist */,
-				E411DDD51CE0099D00EEADEE /* drum-and-bass-loop.wav */,
-				E411DDD71CE0174600EEADEE /* pianoSample.wav */,
-				E411DDD91CE017B600EEADEE /* siren.wav */,
+				E43F9E0E1CF7189200E7EFC7 /* drum-and-bass-loop.wav */,
+				E43F9E101CF7189200E7EFC7 /* siren.wav */,
+				E47881BD1CF7ACDA00C0D2E2 /* pianoSample.wav */,
 			);
 			path = SampleTriggering;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 				E411DD951CDFFC9B00EEADEE /* Sources */,
 				E411DD961CDFFC9B00EEADEE /* Frameworks */,
 				E411DD971CDFFC9B00EEADEE /* Resources */,
-				E411DDCE1CDFFCB600EEADEE /* Embed Frameworks */,
+				E48E1BA31CF675B000A712CE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,10 +263,10 @@
 			files = (
 				E411DDA71CDFFC9B00EEADEE /* LaunchScreen.storyboard in Resources */,
 				E411DDA41CDFFC9B00EEADEE /* Assets.xcassets in Resources */,
+				E47881BE1CF7ACDA00C0D2E2 /* pianoSample.wav in Resources */,
 				E411DDA21CDFFC9B00EEADEE /* Main.storyboard in Resources */,
-				E411DDD81CE0174600EEADEE /* pianoSample.wav in Resources */,
-				E411DDDA1CE017B600EEADEE /* siren.wav in Resources */,
-				E411DDD61CE0099D00EEADEE /* drum-and-bass-loop.wav in Resources */,
+				E43F9E131CF7189200E7EFC7 /* siren.wav in Resources */,
+				E43F9E111CF7189200E7EFC7 /* drum-and-bass-loop.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

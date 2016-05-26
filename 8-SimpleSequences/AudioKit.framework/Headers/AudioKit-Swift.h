@@ -93,9 +93,9 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import ObjectiveC;
+@import CoreMIDI;
 @import Foundation;
 @import Accelerate;
-@import CoreMIDI;
 @import CoreGraphics;
 @import AVFoundation;
 #endif
@@ -216,6 +216,7 @@ SWIFT_CLASS("_TtC8AudioKit13AKAudioPlayer")
 
 /// Boolean indicating whether or not to loop the playback
 @property (nonatomic) BOOL looping;
+@property (nonatomic, copy) void (^ _Nullable completionHandler)(void);
 
 /// Total duration of one loop through of the file
 @property (nonatomic, readonly) double duration;
@@ -235,10 +236,7 @@ SWIFT_CLASS("_TtC8AudioKit13AKAudioPlayer")
 /// Initialize the player
 ///
 /// \param file Path to the audio file
-- (nonnull instancetype)init:(NSString * _Nonnull)file OBJC_DESIGNATED_INITIALIZER;
-
-/// Reload the file from the disk
-- (void)reloadFile;
+- (nonnull instancetype)init:(NSString * _Nonnull)file completionHandler:(void (^ _Nullable)(void))completionHandler OBJC_DESIGNATED_INITIALIZER;
 
 /// Start playback
 - (void)start;
@@ -258,7 +256,12 @@ SWIFT_CLASS("_TtC8AudioKit13AKAudioPlayer")
 - (void)playFrom:(double)time;
 
 /// Replace the current audio file with a new audio file
+///
+/// \param newFile Path to the new audiofile
 - (void)replaceFile:(NSString * _Nonnull)newFile;
+
+/// Reload the file from the disk
+- (void)reloadFile;
 @end
 
 
@@ -522,6 +525,54 @@ SWIFT_CLASS("_TtC8AudioKit9AKBooster")
 
 /// Function to stop or bypass the node, both are equivalent
 - (void)stop;
+@end
+
+@class AKPolyphonicInstrument;
+
+
+/// A version of AKInstrument specifically targeted to instruments that should be triggerable via MIDI or sequenced with the sequencer.
+SWIFT_CLASS("_TtC8AudioKit16AKMIDIInstrument")
+@interface AKMIDIInstrument : AKNode
+
+/// MIDI Input
+@property (nonatomic) MIDIEndpointRef midiIn;
+
+/// Name of the instrument
+@property (nonatomic, copy) NSString * _Nonnull name;
+
+/// Initialize the MIDI instrument
+///
+/// \param instrument A polyphonic instrument that will be triggered via MIDI
+- (nonnull instancetype)initWithInstrument:(AKPolyphonicInstrument * _Nonnull)instrument OBJC_DESIGNATED_INITIALIZER;
+
+/// Enable MIDI input from a given MIDI client This is not in the init function because it must be called AFTER you start audiokit
+///
+/// \param midiClient A refernce to the midi client
+///
+/// \param name Name to connect with
+- (void)enableMIDI:(MIDIClientRef)midiClient name:(NSString * _Nonnull)name;
+
+/// Handle MIDI commands that come in externally
+///
+/// \param note MIDI Note number
+///
+/// \param velocity MIDI velocity
+///
+/// \param channel MIDI channel
+- (void)receivedMIDINoteOn:(NSInteger)note velocity:(NSInteger)velocity channel:(NSInteger)channel;
+
+/// Start a note
+- (void)startNote:(NSInteger)note withVelocity:(NSInteger)velocity onChannel:(NSInteger)channel;
+
+/// Stop a note
+- (void)stopNote:(NSInteger)note onChannel:(NSInteger)channel;
+@end
+
+
+SWIFT_CLASS("_TtC8AudioKit20AKCallbackInstrument")
+@interface AKCallbackInstrument : AKMIDIInstrument
+- (void)startNote:(NSInteger)note withVelocity:(NSInteger)velocity onChannel:(NSInteger)channel;
+- (void)stopNote:(NSInteger)note onChannel:(NSInteger)channel;
 @end
 
 
@@ -1378,8 +1429,8 @@ SWIFT_CLASS("_TtC8AudioKit10AKExpander")
 
 
 /// FFT Calculation for any node
-SWIFT_CLASS("_TtC8AudioKit5AKFFT")
-@interface AKFFT : NSObject <EZAudioFFTDelegate>
+SWIFT_CLASS("_TtC8AudioKit8AKFFTTap")
+@interface AKFFTTap : NSObject <EZAudioFFTDelegate>
 
 /// Array of FFT data
 @property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull fftData;
@@ -1525,22 +1576,6 @@ SWIFT_CLASS("_TtC8AudioKit22AKPolyphonicInstrument")
 /// \param note MIDI Note Number
 - (void)stopNote:(NSInteger)note;
 
-/// Start playback of a particular voice with MIDI style note and velocity
-///
-/// \param voice Voice to start
-///
-/// \param note MIDI Note Number
-///
-/// \param velocity MIDI Velocity (0-127)
-- (void)playVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note velocity:(NSInteger)velocity;
-
-/// Stop playback of a particular voice
-///
-/// \param voice Voice to stop
-///
-/// \param note MIDI Note Number
-- (void)stopVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note;
-
 /// Stop all voices
 - (void)panic;
 @end
@@ -1576,22 +1611,6 @@ SWIFT_CLASS("_TtC8AudioKit9AKFMSynth")
 ///
 /// \param voiceCount Maximum number of voices that will be required
 - (nonnull instancetype)initWithVoiceCount:(NSInteger)voiceCount OBJC_DESIGNATED_INITIALIZER;
-
-/// Start a given voice playing a note.
-///
-/// \param voice Voice to start
-///
-/// \param note MIDI Note Number to start
-///
-/// \param velocity MIDI Velocity (0-127) to trigger the note at
-- (void)playVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note velocity:(NSInteger)velocity;
-
-/// Stop a given voice playing a note.
-///
-/// \param voice Voice to stop
-///
-/// \param note MIDI Note Number to stop
-- (void)stopVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note;
 @end
 
 
@@ -2030,52 +2049,13 @@ SWIFT_CLASS("_TtC8AudioKit35AKLowShelfParametricEqualizerFilter")
 @end
 
 
-
-/// A version of AKInstrument specifically targeted to instruments that should be triggerable via MIDI or sequenced with the sequencer.
-SWIFT_CLASS("_TtC8AudioKit16AKMIDIInstrument")
-@interface AKMIDIInstrument : AKNode
-
-/// MIDI Input
-@property (nonatomic) MIDIEndpointRef midiIn;
-
-/// Name of the instrument
-@property (nonatomic, copy) NSString * _Nonnull name;
-
-/// Initialize the MIDI instrument
-///
-/// \param instrument A polyphonic instrument that will be triggered via MIDI
-- (nonnull instancetype)initWithInstrument:(AKPolyphonicInstrument * _Nonnull)instrument OBJC_DESIGNATED_INITIALIZER;
-
-/// Enable MIDI input from a given MIDI client This is not in the init function because it must be called AFTER you start audiokit
-///
-/// \param midiClient A refernce to the midi client
-///
-/// \param name Name to connect with
-- (void)enableMIDI:(MIDIClientRef)midiClient name:(NSString * _Nonnull)name;
-
-/// Handle MIDI commands that come in externally
-///
-/// \param note MIDI Note number
-///
-/// \param velocity MIDI velocity
-///
-/// \param channel MIDI channel
-- (void)receivedMIDINoteOn:(NSInteger)note velocity:(NSInteger)velocity channel:(NSInteger)channel;
-
-/// Start a note
-- (void)startNote:(NSInteger)note withVelocity:(NSInteger)velocity onChannel:(NSInteger)channel;
-
-/// Stop a note
-- (void)stopNote:(NSInteger)note onChannel:(NSInteger)channel;
-@end
-
 @class AVAudioUnitSampler;
 @class NSMutableDictionary;
 
 
 /// Sampler audio generation.
 ///
-/// <ol><li>init the audio unit like this: var sampler = AKSampler()</li><li>load a sound a file: sampler.loadWav("path/to/your/sound/file/in/app/bundle") (without wav extension)</li><li>connect to the avengine: AudioKit.output = sampler</li><li>start the engine AudioKit.start()</li></ol>
+/// <ol><li>init the audio unit like this: var sampler = AKSampler()</li><li>load a sound a file: sampler.loadWav("path/to/your/sound/file/in/app/bundle") (without wav extension)</li><li>connect to the engine: AudioKit.output = sampler</li><li>start the engine AudioKit.start()</li></ol>
 SWIFT_CLASS("_TtC8AudioKit9AKSampler")
 @interface AKSampler : AKNode
 
@@ -2459,7 +2439,7 @@ SWIFT_CLASS("_TtC8AudioKit13AKNodeFFTPlot")
 /// \param width Width of the view
 ///
 /// \param height Height of the view
-- (nonnull instancetype)init:(AKNode * _Nonnull)input frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init:(AKNode * _Nonnull)input frame:(CGRect)frame bufferSize:(NSInteger)bufferSize OBJC_DESIGNATED_INITIALIZER;
 
 /// Callback function for FFT data:
 ///
@@ -2492,7 +2472,7 @@ SWIFT_CLASS("_TtC8AudioKit16AKNodeOutputPlot")
 /// \param width Width of the view
 ///
 /// \param height Height of the view
-- (nonnull instancetype)init:(AKNode * _Nonnull)input frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init:(AKNode * _Nonnull)input frame:(CGRect)frame bufferSize:(NSInteger)bufferSize OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -2522,22 +2502,6 @@ SWIFT_CLASS("_TtC8AudioKit16AKNoiseGenerator")
 ///
 /// \param voiceCount Maximum number of simultaneous voices
 - (nonnull instancetype)initWithWhitePinkMix:(double)whitePinkMix voiceCount:(NSInteger)voiceCount OBJC_DESIGNATED_INITIALIZER;
-
-/// Start playback of a particular voice with MIDI style note and velocity
-///
-/// \param voice Voice to start
-///
-/// \param note MIDI Note Number
-///
-/// \param velocity MIDI Velocity (0-127)
-- (void)playVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note velocity:(NSInteger)velocity;
-
-/// Stop playback of a particular voice
-///
-/// \param voice Voice to stop
-///
-/// \param note MIDI Note Number
-- (void)stopVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note;
 @end
 
 
@@ -2667,6 +2631,13 @@ SWIFT_CLASS("_TtC8AudioKit20AKOutputWaveformPlot")
 /// \param frame CGRect in which to draw the plot
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 
+/// Initialize the plot in a frame with a different buffer size
+///
+/// \param frame CGRect in which to draw the plot
+///
+/// \param bufferSize size of the buffer - raise this number if the device struggles with generating the waveform
+- (nonnull instancetype)initWithFrame:(CGRect)frame bufferSize:(NSInteger)bufferSize OBJC_DESIGNATED_INITIALIZER;
+
 /// Required coder-based initialization (for use with Interface Builder)
 ///
 /// \param coder NSCoder
@@ -2707,22 +2678,6 @@ SWIFT_CLASS("_TtC8AudioKit10AKPWMSynth")
 ///
 /// \param voiceCount Maximum number of voices that will be required
 - (nonnull instancetype)initWithVoiceCount:(NSInteger)voiceCount OBJC_DESIGNATED_INITIALIZER;
-
-/// Start playback of a particular voice with MIDI style note and velocity
-///
-/// \param voice Voice to start
-///
-/// \param note MIDI Note Number
-///
-/// \param velocity MIDI Velocity (0-127)
-- (void)playVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note velocity:(NSInteger)velocity;
-
-/// Stop playback of a particular voice
-///
-/// \param voice Voice to stop
-///
-/// \param note MIDI Note Number
-- (void)stopVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note;
 @end
 
 
@@ -2970,6 +2925,53 @@ SWIFT_CLASS("_TtC8AudioKit11AKPinkNoise")
 
 /// Function create an identical new node for use in creating polyphonic instruments
 - (AKVoice * _Nonnull)duplicate;
+
+/// Function to start, play, or activate the node, all do the same thing
+- (void)start;
+
+/// Function to stop or bypass the node, both are equivalent
+- (void)stop;
+@end
+
+
+
+/// Faust-based pitch shfiter
+///
+/// \param input Input node to process
+///
+/// \param shift Pitch shift (in semitones)
+///
+/// \param windowSize Window size (in samples)
+///
+/// \param crossfade Crossfade (in samples)
+SWIFT_CLASS("_TtC8AudioKit14AKPitchShifter")
+@interface AKPitchShifter : AKNode
+
+/// Ramp Time represents the speed at which parameters are allowed to change
+@property (nonatomic) double rampTime;
+
+/// Pitch shift (in semitones)
+@property (nonatomic) double shift;
+
+/// Window size (in samples)
+@property (nonatomic) double windowSize;
+
+/// Crossfade (in samples)
+@property (nonatomic) double crossfade;
+
+/// Tells whether the node is processing (ie. started, playing, or active)
+@property (nonatomic, readonly) BOOL isStarted;
+
+/// Initialize this pitchshifter node
+///
+/// \param input Input node to process
+///
+/// \param shift Pitch shift (in semitones)
+///
+/// \param windowSize Window size (in samples)
+///
+/// \param crossfade Crossfade (in samples)
+- (nonnull instancetype)init:(AKNode * _Nonnull)input shift:(double)shift windowSize:(double)windowSize crossfade:(double)crossfade OBJC_DESIGNATED_INITIALIZER;
 
 /// Function to start, play, or activate the node, all do the same thing
 - (void)start;
@@ -3249,6 +3251,13 @@ SWIFT_CLASS("_TtC8AudioKit19AKRollingOutputPlot")
 /// \param frame CGRect in which to draw the plot
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 
+/// Initialize the plot in a frame with a different buffer size
+///
+/// \param frame CGRect in which to draw the plot
+///
+/// \param bufferSize size of the buffer - raise this number if the device struggles with generating the waveform
+- (nonnull instancetype)initWithFrame:(CGRect)frame bufferSize:(NSInteger)bufferSize OBJC_DESIGNATED_INITIALIZER;
+
 /// Required coder-based initialization (for use with Interface Builder)
 ///
 /// \param coder NSCoder
@@ -3343,22 +3352,6 @@ SWIFT_CLASS("_TtC8AudioKit15AKSawtoothSynth")
 ///
 /// \param voiceCount Maximum number of voices that will be required
 - (nonnull instancetype)initWithVoiceCount:(NSInteger)voiceCount OBJC_DESIGNATED_INITIALIZER;
-
-/// Start playback of a particular voice with MIDI style note and velocity
-///
-/// \param voice Voice to start
-///
-/// \param note MIDI Note Number
-///
-/// \param velocity MIDI Velocity (0-127)
-- (void)playVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note velocity:(NSInteger)velocity;
-
-/// Stop playback of a particular voice
-///
-/// \param voice Voice to stop
-///
-/// \param note MIDI Note Number
-- (void)stopVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note;
 @end
 
 @class AVAudioFormat;
@@ -3514,22 +3507,6 @@ SWIFT_CLASS("_TtC8AudioKit11AKSynthKick")
 ///
 /// \param voiceCount Number of voices (usually two is plenty for drums)
 - (nonnull instancetype)initWithVoiceCount:(NSInteger)voiceCount OBJC_DESIGNATED_INITIALIZER;
-
-/// Start playback of a particular voice with MIDI style note and velocity
-///
-/// \param voice Voice to start
-///
-/// \param note MIDI Note Number
-///
-/// \param velocity MIDI Velocity (0-127)
-- (void)playVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note velocity:(NSInteger)velocity;
-
-/// Stop playback of a particular voice
-///
-/// \param voice Voice to stop
-///
-/// \param note MIDI Note Number
-- (void)stopVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note;
 @end
 
 
@@ -3542,15 +3519,6 @@ SWIFT_CLASS("_TtC8AudioKit12AKSynthSnare")
 ///
 /// \param voiceCount Number of voices (usually two is plenty for drums)
 - (nonnull instancetype)initWithVoiceCount:(NSInteger)voiceCount duration:(double)duration resonance:(double)resonance OBJC_DESIGNATED_INITIALIZER;
-
-/// Start playback of a particular voice with MIDI style note and velocity
-///
-/// \param voice Voice to start
-///
-/// \param note MIDI Note Number
-///
-/// \param velocity MIDI Velocity (0-127)
-- (void)playVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note velocity:(NSInteger)velocity;
 
 /// Stop playback of a particular voice
 ///
@@ -3799,6 +3767,32 @@ SWIFT_CLASS("_TtC8AudioKit12AKToneFilter")
 
 
 
+/// Table-lookup tremolo with linear interpolation
+///
+/// \param input Input node to process
+///
+/// \param frequency Frequency (Hz)
+SWIFT_CLASS("_TtC8AudioKit9AKTremolo")
+@interface AKTremolo : AKNode
+
+/// Ramp Time represents the speed at which parameters are allowed to change
+@property (nonatomic) double rampTime;
+
+/// Frequency (Hz)
+@property (nonatomic) double frequency;
+
+/// Tells whether the node is processing (ie. started, playing, or active)
+@property (nonatomic, readonly) BOOL isStarted;
+
+/// Function to start, play, or activate the node, all do the same thing
+- (void)start;
+
+/// Function to stop or bypass the node, both are equivalent
+- (void)stop;
+@end
+
+
+
 /// Bandlimited triangleoscillator This is a bandlimited triangle oscillator ported from the "triangle" function from the Faust programming language.
 ///
 /// \param frequency In cycles per second, or Hz.
@@ -3945,22 +3939,6 @@ SWIFT_CLASS("_TtC8AudioKit16AKWavetableSynth")
 
 /// Release time
 @property (nonatomic) double releaseDuration;
-
-/// Start playback of a particular voice with MIDI style note and velocity
-///
-/// \param voice Voice to start
-///
-/// \param note MIDI Note Number
-///
-/// \param velocity MIDI Velocity (0-127)
-- (void)playVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note velocity:(NSInteger)velocity;
-
-/// Stop playback of a particular voice
-///
-/// \param voice Voice to stop
-///
-/// \param note MIDI Note Number
-- (void)stopVoice:(AKVoice * _Nonnull)voice note:(NSInteger)note;
 @end
 
 

@@ -14,8 +14,8 @@
 		E41FB68B1CD2EC4C005CAF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41FB6891CD2EC4C005CAF9E /* LaunchScreen.storyboard */; };
 		E41FB6961CD2EC4C005CAF9E /* OscillatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB6951CD2EC4C005CAF9E /* OscillatorUITests.swift */; };
 		E41FB6A11CD2EC4C005CAF9E /* OscillatorUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB6A01CD2EC4C005CAF9E /* OscillatorUIUITests.swift */; };
-		E41FB6B01CD2EC5F005CAF9E /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41FB6AE1CD2EC5A005CAF9E /* AudioKit.framework */; };
-		E41FB6B11CD2EC5F005CAF9E /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E41FB6AE1CD2EC5A005CAF9E /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E4E9F57A1CF671C40058FBD6 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E9F5781CF671BF0058FBD6 /* AudioKit.framework */; };
+		E4E9F57B1CF671C40058FBD6 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4E9F5781CF671BF0058FBD6 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E41FB6B11CD2EC5F005CAF9E /* AudioKit.framework in Embed Frameworks */,
+				E4E9F57B1CF671C40058FBD6 /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +63,7 @@
 		E41FB69C1CD2EC4C005CAF9E /* OscillatorUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OscillatorUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41FB6A01CD2EC4C005CAF9E /* OscillatorUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OscillatorUIUITests.swift; sourceTree = "<group>"; };
 		E41FB6A21CD2EC4C005CAF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E41FB6AE1CD2EC5A005CAF9E /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		E4E9F5781CF671BF0058FBD6 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41FB6B01CD2EC5F005CAF9E /* AudioKit.framework in Frameworks */,
+				E4E9F57A1CF671C40058FBD6 /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 		E41FB6741CD2EC4C005CAF9E = {
 			isa = PBXGroup;
 			children = (
-				E41FB6AE1CD2EC5A005CAF9E /* AudioKit.framework */,
+				E4E9F5781CF671BF0058FBD6 /* AudioKit.framework */,
 				E41FB67F1CD2EC4C005CAF9E /* OscillatorUI */,
 				E41FB6941CD2EC4C005CAF9E /* OscillatorUITests */,
 				E41FB69F1CD2EC4C005CAF9E /* OscillatorUIUITests */,
@@ -512,6 +512,7 @@
 				E41FB6A71CD2EC4C005CAF9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E41FB6A81CD2EC4C005CAF9E /* Build configuration list for PBXNativeTarget "OscillatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +521,7 @@
 				E41FB6AA1CD2EC4C005CAF9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E41FB6AB1CD2EC4C005CAF9E /* Build configuration list for PBXNativeTarget "OscillatorUIUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +530,7 @@
 				E41FB6AD1CD2EC4C005CAF9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
