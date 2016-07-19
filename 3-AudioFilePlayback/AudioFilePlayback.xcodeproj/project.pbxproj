@@ -15,8 +15,8 @@
 		E41FB6121CD2D5BE005CAF9E /* AudioFilePlaybackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB6111CD2D5BE005CAF9E /* AudioFilePlaybackTests.swift */; };
 		E41FB61D1CD2D5BE005CAF9E /* AudioFilePlaybackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB61C1CD2D5BE005CAF9E /* AudioFilePlaybackUITests.swift */; };
 		E41FB6301CD2D66D005CAF9E /* mixloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E41FB62F1CD2D66D005CAF9E /* mixloop.wav */; };
-		E4E9F57E1CF6721B0058FBD6 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E9F57C1CF672170058FBD6 /* AudioKit.framework */; };
-		E4E9F57F1CF6721B0058FBD6 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4E9F57C1CF672170058FBD6 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E48A8B5C1D3E7C1B008E36FA /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48A8B5A1D3E7C16008E36FA /* AudioKit.framework */; };
+		E48A8B5D1D3E7C1B008E36FA /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E48A8B5A1D3E7C16008E36FA /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E4E9F57F1CF6721B0058FBD6 /* AudioKit.framework in Embed Frameworks */,
+				E48A8B5D1D3E7C1B008E36FA /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +65,7 @@
 		E41FB61C1CD2D5BE005CAF9E /* AudioFilePlaybackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFilePlaybackUITests.swift; sourceTree = "<group>"; };
 		E41FB61E1CD2D5BE005CAF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E41FB62F1CD2D66D005CAF9E /* mixloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mixloop.wav; sourceTree = "<group>"; };
-		E4E9F57C1CF672170058FBD6 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		E48A8B5A1D3E7C16008E36FA /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4E9F57E1CF6721B0058FBD6 /* AudioKit.framework in Frameworks */,
+				E48A8B5C1D3E7C1B008E36FA /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +97,7 @@
 		E41FB5F01CD2D5BE005CAF9E = {
 			isa = PBXGroup;
 			children = (
-				E4E9F57C1CF672170058FBD6 /* AudioKit.framework */,
+				E48A8B5A1D3E7C16008E36FA /* AudioKit.framework */,
 				E41FB5FB1CD2D5BE005CAF9E /* AudioFilePlayback */,
 				E41FB6101CD2D5BE005CAF9E /* AudioFilePlaybackTests */,
 				E41FB61B1CD2D5BE005CAF9E /* AudioFilePlaybackUITests */,

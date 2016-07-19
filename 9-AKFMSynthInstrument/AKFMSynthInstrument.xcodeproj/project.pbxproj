@@ -14,9 +14,9 @@
 		E45427CC1CED2F94009448F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45427CA1CED2F94009448F2 /* LaunchScreen.storyboard */; };
 		E45427D71CED2F95009448F2 /* AKFMSynthInstrumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45427D61CED2F95009448F2 /* AKFMSynthInstrumentTests.swift */; };
 		E45427E21CED2F95009448F2 /* AKFMSynthInstrumentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45427E11CED2F95009448F2 /* AKFMSynthInstrumentUITests.swift */; };
-		E45427F51CED300F009448F2 /* AKFMSynth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45427F41CED300F009448F2 /* AKFMSynth.swift */; };
-		E47881CD1CF7ADC600C0D2E2 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47881CB1CF7ADBD00C0D2E2 /* AudioKit.framework */; };
-		E47881CE1CF7ADC600C0D2E2 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E47881CB1CF7ADBD00C0D2E2 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E48A8B7B1D3E7D11008E36FA /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48A8B791D3E7D0B008E36FA /* AudioKit.framework */; };
+		E48A8B7C1D3E7D11008E36FA /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E48A8B791D3E7D0B008E36FA /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E48A8B7E1D3E916F008E36FA /* AKFMOscillatorBankInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48A8B7D1D3E916F008E36FA /* AKFMOscillatorBankInstrument.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E47881CE1CF7ADC600C0D2E2 /* AudioKit.framework in Embed Frameworks */,
+				E48A8B7C1D3E7D11008E36FA /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,8 +64,8 @@
 		E45427DD1CED2F95009448F2 /* AKFMSynthInstrumentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKFMSynthInstrumentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45427E11CED2F95009448F2 /* AKFMSynthInstrumentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKFMSynthInstrumentUITests.swift; sourceTree = "<group>"; };
 		E45427E31CED2F95009448F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E45427F41CED300F009448F2 /* AKFMSynth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AKFMSynth.swift; path = ../AKFMSynth.swift; sourceTree = "<group>"; };
-		E47881CB1CF7ADBD00C0D2E2 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		E48A8B791D3E7D0B008E36FA /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		E48A8B7D1D3E916F008E36FA /* AKFMOscillatorBankInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKFMOscillatorBankInstrument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E47881CD1CF7ADC600C0D2E2 /* AudioKit.framework in Frameworks */,
+				E48A8B7B1D3E7D11008E36FA /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +97,7 @@
 		E45427B51CED2F94009448F2 = {
 			isa = PBXGroup;
 			children = (
-				E47881CB1CF7ADBD00C0D2E2 /* AudioKit.framework */,
+				E48A8B791D3E7D0B008E36FA /* AudioKit.framework */,
 				E45427C01CED2F94009448F2 /* AKFMSynthInstrument */,
 				E45427D51CED2F95009448F2 /* AKFMSynthInstrumentTests */,
 				E45427E01CED2F95009448F2 /* AKFMSynthInstrumentUITests */,
@@ -120,7 +120,7 @@
 			children = (
 				E45427C11CED2F94009448F2 /* AppDelegate.swift */,
 				E45427C31CED2F94009448F2 /* ViewController.swift */,
-				E45427F41CED300F009448F2 /* AKFMSynth.swift */,
+				E48A8B7D1D3E916F008E36FA /* AKFMOscillatorBankInstrument.swift */,
 				E45427C51CED2F94009448F2 /* Main.storyboard */,
 				E45427C81CED2F94009448F2 /* Assets.xcassets */,
 				E45427CA1CED2F94009448F2 /* LaunchScreen.storyboard */,
@@ -279,9 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E45427F51CED300F009448F2 /* AKFMSynth.swift in Sources */,
 				E45427C41CED2F94009448F2 /* ViewController.swift in Sources */,
 				E45427C21CED2F94009448F2 /* AppDelegate.swift in Sources */,
+				E48A8B7E1D3E916F008E36FA /* AKFMOscillatorBankInstrument.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
