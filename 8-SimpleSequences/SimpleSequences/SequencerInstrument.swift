@@ -44,7 +44,8 @@ public class SequencerInstrument {
         sequencer = AKSequencer(filename: "4tracks", engine: AudioKit.engine)
         
         //Set the length of our sequence in beats
-        sequencer.setLength(4)
+        let duration = AKDuration(beats:4)
+        sequencer.setLength(duration)
         
         //Allow our sequence to loop 
         sequencer.enableLooping()
