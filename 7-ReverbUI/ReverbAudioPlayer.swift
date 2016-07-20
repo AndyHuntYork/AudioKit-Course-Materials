@@ -16,10 +16,9 @@ public class ReverbAudioPlayer {
     
     init() {
         
-        let bundle = NSBundle.mainBundle()
-        let file = bundle.pathForResource("drumloop", ofType: "wav")
+        let file = try? AKAudioFile(readFileName: "drumloop.wav", baseDir: .Resources)
 
-        audioLoopPlayer = AKAudioPlayer(file!)
+        audioLoopPlayer = try! AKAudioPlayer(file: file!)
         reverb = AKReverb(audioLoopPlayer)
         
         // This is where we set our audio player and reverb properties

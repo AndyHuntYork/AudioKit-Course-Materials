@@ -11,14 +11,14 @@ import AudioKit
 
 class ViewController: UIViewController {
 
-    var fmSynth: AKFMSynthInstrument!
+    var fmSynth: AKFMOscillatorBankInstrument!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         // Create an instance of our AKFMSynthInstrument class
-        fmSynth = AKFMSynthInstrument()
+        fmSynth = AKFMOscillatorBankInstrument()
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,7 +7,7 @@ Specifically, we're moving on from audio file play-back, looping, mixing, effect
 and sequencing, to showing how you can use some of AudioKit's existing [Instrument classes](http://audiokit.io/docs/Instruments.html) to build a synthesizer app
 of your own. These instruments are wrappers around various AudioKit synthesizers and generators.
 
-This example uses the [AKFMSynth class](http://audiokit.io/docs/Instruments.html#/s:C8AudioKit9AKFMSynth). `AKFMSynth` is a wrapper class
+This example uses the [AKFMOscillatorBank class](http://audiokit.io/docs/Classes/AKFMOscillatorBank.html). `AKFMOscillatorBank` is a wrapper class
 around `AKFMOscillator`(http://audiokit.io/docs/Classes/AKFMOscillator.html) that allows you to 
 create multiple "voices" of an `FMOscillator`, making it playable as a polyphonic instrument. 
 
@@ -20,23 +20,24 @@ Just like the `AKFMOscillator` that it encapsulates, you can control the followi
 * sustainLevel
 * releaseDuration
 
-If you're not familiar with the concept of voices in a synthesizer, they're essentially the number 
-of oscillators you have at your disposal.So, if we gave our `fmSynth` three voices (as we do in this 
-example), we'd be able to control three oscillators:
+...as well as a few additional parameters:
 
-```
-fmSynth = AKFMSynth(voiceCount: 3)
-```
+* detuningOffset
+* detuningMultiplier
+
+If you're not familiar with the concept of voices in a synthesizer, they're essentially the number 
+of oscillators you have at your disposal. Every time you play or stop a note, you're turning
+an oscillator on and off. 
 
 Instead of turning an oscillator on and off, think of what we're doing as playing a note and 
 stopping a note. For this app, we'll give our synthesizer the ability to play three notes: C, E, and
 G. We'll have three separate functions for each note. The `playC` function below, will call 
-`AKFMSynth`'s `playNote` function. We specify that we want to pass in a value of 48 (which is the 
+`AKFMSynth`'s `play` function. We specify that we want to pass in a value of 48 (which is the 
 MIDI note value for C at the fourth octave), and a velocity value of 50.
 
 ```
 public func playC() {
-    fmSynth.playNote(48, velocity: 50)
+	fmSynth.play(noteNumber: 48, velocity: 50)
 }
 ```
 
@@ -53,7 +54,7 @@ To stop playing our note, we'll have a corresponding `stopC` function:
 
 ```
 public func stopC() {
-	fmSynth.stopNote(48)
+	fmSynth.stop(noteNumber: 48)
 }
 ```
 
@@ -88,6 +89,9 @@ We've included five presets in that Playground to explore:
 * Buzzer
 * Spiral
 * Randomize 
+
+`AKFMOscillatorBank` also has it's own playground as well. You can check out a short video of it in 
+action here: http://audiokit.io/playgrounds/FM%20Oscillator%20Bank/
 
 I'd encourage you to explore these presets, experiment with different values to get the sounds you 
 like, and use those in your polyphonic `AKFMSynth` app!

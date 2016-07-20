@@ -15,12 +15,12 @@
 		E43600621CD77AE900809924 /* MixerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43600611CD77AE900809924 /* MixerTests.swift */; };
 		E436006D1CD77AE900809924 /* MixerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436006C1CD77AE900809924 /* MixerUITests.swift */; };
 		E43600801CD77B8700809924 /* AudioMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436007F1CD77B8700809924 /* AudioMixer.swift */; };
-		E43600851CD77C1A00809924 /* bassloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43600811CD77C1A00809924 /* bassloop.wav */; };
-		E43600861CD77C1A00809924 /* drumloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43600821CD77C1A00809924 /* drumloop.wav */; };
-		E43600871CD77C1A00809924 /* guitarloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43600831CD77C1A00809924 /* guitarloop.wav */; };
-		E43600881CD77C1A00809924 /* leadloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43600841CD77C1A00809924 /* leadloop.wav */; };
-		E4E9F5821CF6725B0058FBD6 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E9F5801CF672540058FBD6 /* AudioKit.framework */; };
-		E4E9F5831CF6725B0058FBD6 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4E9F5801CF672540058FBD6 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E48A8B601D3E7C4D008E36FA /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48A8B5E1D3E7C47008E36FA /* AudioKit.framework */; };
+		E48A8B611D3E7C4D008E36FA /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E48A8B5E1D3E7C47008E36FA /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E4AA6D151D3EFE9B0081A107 /* bassloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43600811CD77C1A00809924 /* bassloop.wav */; };
+		E4AA6D161D3EFEA10081A107 /* drumloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43600821CD77C1A00809924 /* drumloop.wav */; };
+		E4AA6D171D3EFEA30081A107 /* guitarloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43600831CD77C1A00809924 /* guitarloop.wav */; };
+		E4AA6D181D3EFEA50081A107 /* leadloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43600841CD77C1A00809924 /* leadloop.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E4E9F5831CF6725B0058FBD6 /* AudioKit.framework in Embed Frameworks */,
+				E48A8B611D3E7C4D008E36FA /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,7 +73,7 @@
 		E43600821CD77C1A00809924 /* drumloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drumloop.wav; sourceTree = "<group>"; };
 		E43600831CD77C1A00809924 /* guitarloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitarloop.wav; sourceTree = "<group>"; };
 		E43600841CD77C1A00809924 /* leadloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = leadloop.wav; sourceTree = "<group>"; };
-		E4E9F5801CF672540058FBD6 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		E48A8B5E1D3E7C47008E36FA /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4E9F5821CF6725B0058FBD6 /* AudioKit.framework in Frameworks */,
+				E48A8B601D3E7C4D008E36FA /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 		E43600401CD77AE900809924 = {
 			isa = PBXGroup;
 			children = (
-				E4E9F5801CF672540058FBD6 /* AudioKit.framework */,
+				E48A8B5E1D3E7C47008E36FA /* AudioKit.framework */,
 				E436004B1CD77AE900809924 /* Mixer */,
 				E43600601CD77AE900809924 /* MixerTests */,
 				E436006B1CD77AE900809924 /* MixerUITests */,
@@ -264,13 +264,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E43600861CD77C1A00809924 /* drumloop.wav in Resources */,
+				E4AA6D161D3EFEA10081A107 /* drumloop.wav in Resources */,
+				E4AA6D171D3EFEA30081A107 /* guitarloop.wav in Resources */,
+				E4AA6D181D3EFEA50081A107 /* leadloop.wav in Resources */,
+				E4AA6D151D3EFE9B0081A107 /* bassloop.wav in Resources */,
 				E43600571CD77AE900809924 /* LaunchScreen.storyboard in Resources */,
 				E43600541CD77AE900809924 /* Assets.xcassets in Resources */,
-				E43600881CD77C1A00809924 /* leadloop.wav in Resources */,
 				E43600521CD77AE900809924 /* Main.storyboard in Resources */,
-				E43600871CD77C1A00809924 /* guitarloop.wav in Resources */,
-				E43600851CD77C1A00809924 /* bassloop.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

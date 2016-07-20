@@ -14,9 +14,9 @@
 		E41FB6481CD2DAF6005CAF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41FB6461CD2DAF6005CAF9E /* LaunchScreen.storyboard */; };
 		E41FB6531CD2DAF6005CAF9E /* AudioFileReverbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB6521CD2DAF6005CAF9E /* AudioFileReverbTests.swift */; };
 		E41FB65E1CD2DAF6005CAF9E /* AudioFileReverbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB65D1CD2DAF6005CAF9E /* AudioFileReverbUITests.swift */; };
-		E41FB6731CD2DBCF005CAF9E /* drumloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E41FB6721CD2DBCF005CAF9E /* drumloop.wav */; };
-		E47881C11CF7AD2700C0D2E2 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47881BF1CF7AD1200C0D2E2 /* AudioKit.framework */; };
-		E47881C21CF7AD2700C0D2E2 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E47881BF1CF7AD1200C0D2E2 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E48A8B6E1D3E7CB9008E36FA /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48A8B6A1D3E7CAE008E36FA /* AudioKit.framework */; };
+		E48A8B6F1D3E7CB9008E36FA /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E48A8B6A1D3E7CAE008E36FA /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E4AA6D191D3F010E0081A107 /* drumloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E41FB6721CD2DBCF005CAF9E /* drumloop.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E41FB66F1CD2DB0C005CAF9E /* Embed Frameworks */ = {
+		E48A8B701D3E7CB9008E36FA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E47881C21CF7AD2700C0D2E2 /* AudioKit.framework in Embed Frameworks */,
+				E48A8B6F1D3E7CB9008E36FA /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +65,7 @@
 		E41FB65D1CD2DAF6005CAF9E /* AudioFileReverbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFileReverbUITests.swift; sourceTree = "<group>"; };
 		E41FB65F1CD2DAF6005CAF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E41FB6721CD2DBCF005CAF9E /* drumloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drumloop.wav; sourceTree = "<group>"; };
-		E47881BF1CF7AD1200C0D2E2 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		E48A8B6A1D3E7CAE008E36FA /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E47881C11CF7AD2700C0D2E2 /* AudioKit.framework in Frameworks */,
+				E48A8B6E1D3E7CB9008E36FA /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +97,7 @@
 		E41FB6311CD2DAF6005CAF9E = {
 			isa = PBXGroup;
 			children = (
-				E47881BF1CF7AD1200C0D2E2 /* AudioKit.framework */,
+				E48A8B6A1D3E7CAE008E36FA /* AudioKit.framework */,
 				E41FB63C1CD2DAF6005CAF9E /* AudioFileReverb */,
 				E41FB6511CD2DAF6005CAF9E /* AudioFileReverbTests */,
 				E41FB65C1CD2DAF6005CAF9E /* AudioFileReverbUITests */,
@@ -157,7 +157,7 @@
 				E41FB6361CD2DAF6005CAF9E /* Sources */,
 				E41FB6371CD2DAF6005CAF9E /* Frameworks */,
 				E41FB6381CD2DAF6005CAF9E /* Resources */,
-				E41FB66F1CD2DB0C005CAF9E /* Embed Frameworks */,
+				E48A8B701D3E7CB9008E36FA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,8 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E41FB6481CD2DAF6005CAF9E /* LaunchScreen.storyboard in Resources */,
+				E4AA6D191D3F010E0081A107 /* drumloop.wav in Resources */,
 				E41FB6451CD2DAF6005CAF9E /* Assets.xcassets in Resources */,
-				E41FB6731CD2DBCF005CAF9E /* drumloop.wav in Resources */,
 				E41FB6431CD2DAF6005CAF9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,27 +15,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let bundle = NSBundle.mainBundle()
-        let file = bundle.pathForResource("drumloop", ofType: "wav")
-        let player = AKAudioPlayer(file!)
-        player.looping = true
+        let file = try? AKAudioFile(readFileName: "drumloop.wav", baseDir: .Resources)
+        let player = try? AKAudioPlayer(file: file!)
+        player?.looping = true
         
         /* Create an instance of AKReverb. AKReverb is a wrapper for Apple's
         Reverb Audio Unit */
-        let reverb = AKReverb(player)
+        let reverb = AKReverb(player!)
         
         /* Set the value for how much reverb you want to have. Try experimenting
         with different values until you get a sound you like! */
         reverb.dryWetMix = 0.5
         
-        
-        
         /* Since we're running our AKAudioPlayer through an AKReverb, we want to
-        set AudioKit's output to be that of our reverb so we can hear the affected 
+        set AudioKit's output to be that of our reverb so we can hear the affected
         sound, and not just the sound of the unprocessed audio file */
         AudioKit.output = reverb
         AudioKit.start()
-        player.play()
+        player?.play()
         
         /* As AKReverb is a wrapper for Apple's Reverb AudioUnit, we can make use
         of the presets that Apple provides. A complete list of available presets 

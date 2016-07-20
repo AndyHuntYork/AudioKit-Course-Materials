@@ -19,18 +19,17 @@ public class AudioMixer {
     init() {
         
         //Load in our audio samples
-        let bundle = NSBundle.mainBundle()
-        let drumFile   = bundle.pathForResource("drumloop", ofType: "wav")
-        let bassFile   = bundle.pathForResource("bassloop", ofType: "wav")
-        let guitarFile = bundle.pathForResource("guitarloop", ofType: "wav")
-        let leadFile   = bundle.pathForResource("leadloop", ofType: "wav")
+        let drumFile = try? AKAudioFile(readFileName: "drumloop.wav", baseDir: .Resources)
+        let bassFile = try? AKAudioFile(readFileName: "bassloop.wav", baseDir: .Resources)
+        let guitarFile = try? AKAudioFile(readFileName: "guitarloop.wav", baseDir: .Resources)
+        let leadFile = try? AKAudioFile(readFileName: "leadloop.wav", baseDir: .Resources)
 
         //Create audio players for each track
-        drums  = AKAudioPlayer(drumFile!)
-        bass   = AKAudioPlayer(bassFile!)
-        guitar = AKAudioPlayer(guitarFile!)
-        lead   = AKAudioPlayer(leadFile!)
-        
+        drums = try! AKAudioPlayer(file: drumFile!)
+        bass = try! AKAudioPlayer(file: bassFile!)
+        guitar = try! AKAudioPlayer(file: guitarFile!)
+        lead = try! AKAudioPlayer(file: leadFile!)
+
         //Set each track to loop
         drums.looping  = true
         bass.looping   = true

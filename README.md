@@ -36,5 +36,5 @@ your own synthesizer instrument app.
 
 ## AudioKit version
 
-The examples here use AudioKit version 3.1.3, which is the most up-to-date version as of this 
-writing. Please make sure you use 3.1.3 or higher when working on your projects.
+The examples here use AudioKit version 3.2, which is the most up-to-date version as of this 
+writing. Please make sure you use 3.2 or higher when working on your projects.

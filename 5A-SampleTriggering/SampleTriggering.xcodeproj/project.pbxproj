@@ -17,8 +17,8 @@
 		E43DB0441CE93CBE002C7CDF /* AudioSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43DB0431CE93CBE002C7CDF /* AudioSampler.swift */; };
 		E43DB0461CE93D09002C7CDF /* drum-and-bass-loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43DB0451CE93D09002C7CDF /* drum-and-bass-loop.wav */; };
 		E43DB0481CE93D0D002C7CDF /* siren.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43DB0471CE93D0D002C7CDF /* siren.wav */; };
-		E4E9F5861CF672B00058FBD6 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E9F5841CF6728E0058FBD6 /* AudioKit.framework */; };
-		E4E9F5871CF672B00058FBD6 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4E9F5841CF6728E0058FBD6 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E48A8B641D3E7C77008E36FA /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48A8B621D3E7C69008E36FA /* AudioKit.framework */; };
+		E48A8B651D3E7C77008E36FA /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E48A8B621D3E7C69008E36FA /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E4E9F5871CF672B00058FBD6 /* AudioKit.framework in Embed Frameworks */,
+				E48A8B651D3E7C77008E36FA /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,7 +69,7 @@
 		E43DB0431CE93CBE002C7CDF /* AudioSampler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSampler.swift; sourceTree = "<group>"; };
 		E43DB0451CE93D09002C7CDF /* drum-and-bass-loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drum-and-bass-loop.wav"; sourceTree = "<group>"; };
 		E43DB0471CE93D0D002C7CDF /* siren.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = siren.wav; sourceTree = "<group>"; };
-		E4E9F5841CF6728E0058FBD6 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		E48A8B621D3E7C69008E36FA /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4E9F5861CF672B00058FBD6 /* AudioKit.framework in Frameworks */,
+				E48A8B641D3E7C77008E36FA /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 		E43DB0041CE93C8E002C7CDF = {
 			isa = PBXGroup;
 			children = (
-				E4E9F5841CF6728E0058FBD6 /* AudioKit.framework */,
+				E48A8B621D3E7C69008E36FA /* AudioKit.framework */,
 				E43DB00F1CE93C8E002C7CDF /* SampleTriggering */,
 				E43DB0241CE93C8E002C7CDF /* SampleTriggeringTests */,
 				E43DB02F1CE93C8E002C7CDF /* SampleTriggeringUITests */,

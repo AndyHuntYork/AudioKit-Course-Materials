@@ -17,16 +17,15 @@ public class AudioSampler {
     
     init () {
         //Load in our audio samples
-        let bundle = NSBundle.mainBundle()
-        let sampleOne   = bundle.pathForResource("siren", ofType: "wav")
-        let sampleTwo   = bundle.pathForResource("drum-and-bass-loop", ofType: "wav")
-        let sampleThree = bundle.pathForResource("pianoSample", ofType: "wav")
-            
+        let sampleOne = try? AKAudioFile(readFileName: "siren.wav", baseDir: .Resources)
+        let sampleTwo = try? AKAudioFile(readFileName: "drum-and-bass-loop.wav", baseDir: .Resources)
+        let sampleThree = try? AKAudioFile(readFileName: "pianoSample.wav", baseDir: .Resources)
+
         //Create audio players for each track
-        playerOne   = AKAudioPlayer(sampleOne!)
-        playerTwo   = AKAudioPlayer(sampleTwo!)
-        playerThree = AKAudioPlayer(sampleThree!)
-                
+        playerOne   = try! AKAudioPlayer(file: sampleOne!)
+        playerTwo   = try! AKAudioPlayer(file: sampleTwo!)
+        playerThree = try! AKAudioPlayer(file: sampleThree!)
+
         //Create a mixer that uses our audio loops as inputs
         let mixer = AKMixer(playerOne, playerTwo, playerThree)
         
