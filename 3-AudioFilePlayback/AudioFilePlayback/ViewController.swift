@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         let mixLoop = try? AKAudioFile(readFileName: "mixloop.wav", baseDir: .Resources)
 
         /* Create an insance of AKAudioPlayer. AKAudioPlayer requires an audio file
-        to be provided */
+        to be provided.  */
         let player = try! AKAudioPlayer(file: mixLoop!)
         
         /*"looping" is a property of AKAudioFilePlayer. If set to True, the

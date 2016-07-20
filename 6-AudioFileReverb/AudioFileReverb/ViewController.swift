@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         
         /* Create an instance of AKReverb. AKReverb is a wrapper for Apple's
         Reverb Audio Unit */
-        let reverb = AKReverb((player)!)
+        let reverb = AKReverb(player!)
         
         /* Set the value for how much reverb you want to have. Try experimenting
         with different values until you get a sound you like! */
