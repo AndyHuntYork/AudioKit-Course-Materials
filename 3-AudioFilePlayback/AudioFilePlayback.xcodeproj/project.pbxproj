@@ -14,9 +14,9 @@
 		E41FB6071CD2D5BE005CAF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41FB6051CD2D5BE005CAF9E /* LaunchScreen.storyboard */; };
 		E41FB6121CD2D5BE005CAF9E /* AudioFilePlaybackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB6111CD2D5BE005CAF9E /* AudioFilePlaybackTests.swift */; };
 		E41FB61D1CD2D5BE005CAF9E /* AudioFilePlaybackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB61C1CD2D5BE005CAF9E /* AudioFilePlaybackUITests.swift */; };
-		E41FB6301CD2D66D005CAF9E /* mixloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E41FB62F1CD2D66D005CAF9E /* mixloop.wav */; };
 		E48A8B5C1D3E7C1B008E36FA /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48A8B5A1D3E7C16008E36FA /* AudioKit.framework */; };
 		E48A8B5D1D3E7C1B008E36FA /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E48A8B5A1D3E7C16008E36FA /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E4AA6D141D3EE7C00081A107 /* mixloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E41FB62F1CD2D66D005CAF9E /* mixloop.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,7 +255,7 @@
 				E41FB6071CD2D5BE005CAF9E /* LaunchScreen.storyboard in Resources */,
 				E41FB6041CD2D5BE005CAF9E /* Assets.xcassets in Resources */,
 				E41FB6021CD2D5BE005CAF9E /* Main.storyboard in Resources */,
-				E41FB6301CD2D66D005CAF9E /* mixloop.wav in Resources */,
+				E4AA6D141D3EE7C00081A107 /* mixloop.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

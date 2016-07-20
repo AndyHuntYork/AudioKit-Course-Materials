@@ -14,9 +14,9 @@
 		E41FB6481CD2DAF6005CAF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41FB6461CD2DAF6005CAF9E /* LaunchScreen.storyboard */; };
 		E41FB6531CD2DAF6005CAF9E /* AudioFileReverbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB6521CD2DAF6005CAF9E /* AudioFileReverbTests.swift */; };
 		E41FB65E1CD2DAF6005CAF9E /* AudioFileReverbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FB65D1CD2DAF6005CAF9E /* AudioFileReverbUITests.swift */; };
-		E41FB6731CD2DBCF005CAF9E /* drumloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E41FB6721CD2DBCF005CAF9E /* drumloop.wav */; };
 		E48A8B6E1D3E7CB9008E36FA /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48A8B6A1D3E7CAE008E36FA /* AudioKit.framework */; };
 		E48A8B6F1D3E7CB9008E36FA /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E48A8B6A1D3E7CAE008E36FA /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E4AA6D191D3F010E0081A107 /* drumloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E41FB6721CD2DBCF005CAF9E /* drumloop.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -253,8 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E41FB6481CD2DAF6005CAF9E /* LaunchScreen.storyboard in Resources */,
+				E4AA6D191D3F010E0081A107 /* drumloop.wav in Resources */,
 				E41FB6451CD2DAF6005CAF9E /* Assets.xcassets in Resources */,
-				E41FB6731CD2DBCF005CAF9E /* drumloop.wav in Resources */,
 				E41FB6431CD2DAF6005CAF9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

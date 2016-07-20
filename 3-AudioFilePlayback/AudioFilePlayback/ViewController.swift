@@ -15,16 +15,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        /* The line below lets us access the our app's bundle. A bundle is used 
-        to organize code, frameworks, and resources such as image or audio files */
-        let bundle = NSBundle.mainBundle()
-        /* This line creates a variable to store our wav file. It will be used as
-        an input for the audio player created next...*/
-        let file = bundle.pathForResource("mixloop", ofType: "wav")
-        
+        /* This line creates a variable of type AKAudioFile 
+         (http://audiokit.io/docs/Classes/AKAudioFile.html) to store our wav 
+         file. It will be used as an input for the audio player created next...*/
+        let mixLoop = try? AKAudioFile(readFileName: "mixloop.wav", baseDir: .Resources)
+
         /* Create an insance of AKAudioPlayer. AKAudioPlayer requires an audio file
         to be provided */
-        let player = AKAudioPlayer(file!)
+        let player = try! AKAudioPlayer(file: mixLoop!)
         
         /*"looping" is a property of AKAudioFilePlayer. If set to True, the
         audio will loop. If set to False, the player will stop when it reaches the
@@ -41,6 +39,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-
