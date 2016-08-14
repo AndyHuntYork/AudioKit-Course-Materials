@@ -11,15 +11,14 @@ oscillator.amplitude =  0.25
 oscillator.frequency =  880
 ```
 
-The documentation for `AKOscillator` can be found [here](http://audiokit.io/docs/Classes/AKOscillator.html);
+AudioKit's [AKOscillator](http://audiokit.io/docs/Oscillator%20Nodes.html#/s:C8AudioKit12AKOscillator) can use several different types of waveforms. These waveforms are created using [AKTable](http://audiokit.io/docs/Structs/AKTable.html). There are 11 waveform table types. The documentation on [AKTableType](http://audiokit.io/docs/Enums/AKTableType.html) has the complete list. 
 
-AudioKit has [six different oscillators types](http://audiokit.io/docs/Oscillator%20Nodes.html). Try 
-substituting a different one in-place of `AKOscillator`. For example, to change the oscillator from 
-an `AKOscillator` type to an `AKSawtoothOscillator`, you would change line 16 in
-`ViewController.swift` from 
 
-`var oscillator = AKOscillator()`
+So, if you wanted 'AKOscillator' to use a Sawtooth waveform, you would use the following code:
 
-to
-
-`var oscillator = AKSawtoothOscillator()`
+```
+let sawtooth = AKTable(.Sawtooth, size: 4096)
+var oscillator = AKOscillator(waveform: sawtooth)
+AudioKit.output = oscillator
+AudioKit.start()
+```
